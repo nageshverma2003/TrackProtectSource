@@ -1,0 +1,233 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="TrackProtect.SiteMaster" %>
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackProtect - Control Panel</title>
+    <link type="text/css" rel="stylesheet" href="css/general_foundicons.css" media="screen, projector, print" />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" media="screen, projector, print" />
+    <link type="text/css" rel="stylesheet" href="css/app.css" media="screen, projector, print" />
+    <script src="js/vendor/custom.modernizr.js" type="text/javascript"></script>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800,800italic,700italic,600italic,400italic'
+        rel='stylesheet' type='text/css' />
+    <style type="text/css">
+        .failureNotification
+        {
+            padding-top: 3px;
+            padding-left: 3px;
+            font-size: .8em;
+            background: #F0F0F0;
+        }
+        
+        
+    </style>
+    <script type="text/javascript">
+        function HighLightLangBtn(id) {
+            var ele = document.getElementById(id);
+            ele.className = "lang active";
+        }
+        function UnHighLightLangBtn(id) {
+            var ele = document.getElementById(id);
+            ele.className = "lang";
+        }
+        function HighLightMenu(id) {
+            if (id == 'Menu1') {
+                var ele = document.getElementById(id);
+                ele.className = "active home";
+            }
+            else {
+                var ele = document.getElementById(id);
+                ele.className = "active";
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-39581442-1', 'trackprotect.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<%--<body onload="javascript:initPage();">--%>
+<body id="<%=Session["bodyid"] %>">
+    <%--<form runat="server" class="custom" >--%>
+    <form class="custom" enctype="multipart/form-data" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+    </asp:ScriptManager>
+    <div id="headerwrap">
+        <!-- Begin Logo & Intro Section -->
+        <div id="header" class="row">
+            <div class="large-6 columns">
+                <a href="../Default.aspx">
+                    <img class="logo" src="../Images/logo.png" alt="TrackProctect Logo" /></a>
+            </div>
+            <div class="large-5 large-offset-1 columns hide-for-small">
+                <div id="header-user-info" class="row">
+                    <div class="large-8 columns">
+                        <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                            <AnonymousTemplate>
+                                <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/Member/MemberHome.aspx"
+                                    BackColor="White" BorderColor="White" BorderPadding="0" BorderStyle="None" BorderWidth="0"
+                                    Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Style="margin-left: 5px"
+                                    CreateUserText="Register" CreateUserUrl="~/Account/Register.aspx" FailureText="<%$ Resources: Resource, LoginFailed %>"
+                                    OnAuthenticate="Login1_Authenticate" FailureAction="RedirectToLoginPage">
+                                    <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                                    <LayoutTemplate>
+                                        <div class="loginBox">
+                                            <table border="0" cellpadding="0" cellspacing="0" style="padding-left: 2px; padding-top: 2px;
+                                                padding-bottom: 2px; border-color: White; border-width: 0px; border-style: None;">
+                                                <tr>
+                                                    <td align="left" style="color: #696969; background-color: White; font-size: 7pt;
+                                                        font-weight: bold;">
+                                                        <asp:Localize ID="Localize1" runat="server" Text="<%$ Resources: Resource, LoginAt %>" />
+                                                    </td>
+                                                    <td align="center" colspan="3" style="color: Red;">
+                                                        <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+                                                    </td>
+                                                </tr>
+                                                <tr style="height: 25px;">
+                                                    <td style="vertical-align: top;">
+                                                        <asp:TextBox ID="UserName" runat="server" Font-Size="1.0em" TabIndex="1" CssClass="loginText"
+                                                            ToolTip="Gebruikersnaam" onblur="showUsername('ctl00_HeadLoginView_Login1_UserName');"
+                                                            onfocus="hideWatermark('ctl00_HeadLoginView_Login1_UserName');"></asp:TextBox>
+                                                        <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName"
+                                                            ErrorMessage="<%$ Resources: Resource, UsernameRequired %>" ToolTip="<%$ Resources: Resource, UsernameRequired %>"
+                                                            ValidationGroup="ctl00$Login1">*</asp:RequiredFieldValidator>
+                                                    </td>
+                                                    <td rowspan="2" valign="top" style="text-align: right;">
+                                                        <asp:ImageButton ID="LoginButton" runat="server" BackColor="#FFFBFF" BorderWidth="0px"
+                                                            CommandName="Login" ForeColor="#284775" ValidationGroup="ctl00$Login1" AlternateText="Lo g In"
+                                                            ImageUrl="<%$ Resources: resource, imgGo %>" TabIndex="3" />
+                                                    </td>
+                                                </tr>
+                                                <tr style="height: 25px;">
+                                                    <td style="vertical-align: bottom;">
+                                                        <asp:TextBox ID="Password" runat="server" Font-Size="1.0em" TextMode="Password" CssClass="loginText"
+                                                            TabIndex="2" ToolTip="Password" onblur="showPassword('ctl00_HeadLoginView_Login1_Password');"
+                                                            onfocus="hideWatermark('ctl00_HeadLoginView_Login1_Password');"></asp:TextBox>
+                                                        <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password"
+                                                            ErrorMessage="<%$ Resources: Resource, PasswordRequired %>" ToolTip="<%$ Resources: Resource, PasswordRequired %>"
+                                                            ValidationGroup="ctl00$Login1">*</asp:RequiredFieldValidator>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </LayoutTemplate>
+                                    <LoginButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px"
+                                        Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
+                                    <TextBoxStyle Font-Size="0.8em" />
+                                    <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                                </asp:Login>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <h2 class="name" style="margin-top:0.2em;">
+                                    <asp:Literal ID="HeadLoginName" runat="server" /></h2>
+                                <p class="actions">
+                                    <asp:HyperLink runat="server" NavigateUrl="~/Member/Profile.aspx"><asp:Localize runat="server" Text='<%$ Resources : Resource, Profile %>'></asp:Localize></asp:HyperLink>
+                                    |
+                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="<%$ Resources: Resource, LogoutText %>"
+                                        LogoutPageUrl="~/Logout.aspx" />
+                                    |
+                                    <asp:Button ID="LanguageUS" Text="en" runat="server" OnCommand="SelectLanguage" CommandArgument="en-US"
+                                        BorderStyle="None" CssClass="lang" />
+                                    <asp:Button ID="LanguageNL" Text="nl" runat="server" OnCommand="SelectLanguage" CommandArgument="nl-NL"
+                                        BorderStyle="None" CssClass="lang" />
+                                </p>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+                    <div class="large-4 columns">
+                        <img class="avatar" src="../Images/icon-avatar.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentwrap">
+        <div id="menu" class="row hide-for-small">
+            <div class="large-12 columns">
+                <nav class="big-screen top-bar">
+                <section class="top-bar-section">
+                    <ul class="large-block-grid-5">
+                        <li id="Menu1" class="home"><asp:HyperLink NavigateUrl="~/Member/MemberHome.aspx" runat="server"><i class="home"></i></asp:HyperLink></li>                        
+                         <li id="Menu2" ><asp:HyperLink Text="<%$ Resources : Resource, MyTracksText %>" NavigateUrl="~/Member/MemberTracks.aspx" runat="server" /></li>
+                        <li id="Menu3" ><asp:HyperLink Text="<%$ Resources : Resource, ProtectTrackText %>" NavigateUrl="~/Member/RegisterDocument.aspx" runat="server" /></li>                                               
+                        <li id="Menu4"><asp:HyperLink NavigateUrl="~/Member/FAQ.aspx" runat="server">F.A.Q</asp:HyperLink></li>
+                        <li id="Menu5"><asp:HyperLink NavigateUrl="~/Member/MemberContact.aspx" runat="server">CONTACT</asp:HyperLink></li>
+                    </ul>
+                </section>
+                </nav>
+            </div>
+        </div>
+        <div class="show-for-small fixed">
+            <nav class="top-bar">
+                <ul class="title-area">
+                    <li class="name">
+                        <h1>
+                        <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Member/MemberHome.aspx" runat="server">Home</asp:HyperLink>
+                        <div class="lang-row right">
+                        <asp:Button ID="LanguageUS" Text="EN" runat="server" OnCommand="SelectLanguage" CommandArgument="en-US"
+                                        BorderStyle="None" />
+                                    <asp:Button ID="LanguageNL" Text="NL" runat="server" OnCommand="SelectLanguage" CommandArgument="nl-NL"
+                                        BorderStyle="None" />
+                                        </div>
+
+                        </h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul>
+                        <li><asp:HyperLink ID="HyperLink2" Text="<%$ Resources : Resource, MyTracksText %>" NavigateUrl="~/Member/MemberTracks.aspx" runat="server" /></li>
+                        <li><asp:HyperLink ID="HyperLink3" Text="<%$ Resources : Resource, ProtectTrackText %>" NavigateUrl="~/Member/RegisterDocument.aspx" runat="server" /></li>                        
+                        <li><asp:HyperLink ID="HyperLink4" NavigateUrl="~/Member/FAQ.aspx" runat="server">F.A.Q</asp:HyperLink></li>
+                        <li><asp:HyperLink ID="HyperLink5" NavigateUrl="~/Member/MemberContact.aspx" runat="server">CONTACT</asp:HyperLink></li>                       
+                    </ul>
+                </section>
+            </nav>
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    <%--start content--%>
+    <%--End content--%>
+    <!-- Start of footer -->
+    <div id="footer">
+        <asp:Literal ID="FooterLiteral" runat="server"></asp:Literal>
+        <%-- <div class="row">
+            <div class="large-6 columns">
+                <img src="../Images/logo-footer.png" alt="TrackProtect Logo" />
+                <p class="tagline">
+                    bescherm en dell de waarde van je muzikale werk</p>
+            </div>
+            <div class="large-6 columns">
+                <ul class="social-nav">
+                    <li><a class="social" href="#" target="_blank">f</a></li>
+                    <li><a class="social" href="#" target="_blank">l</a></li>
+                    <li><a class="social" href="#" target="_blank">!</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <p class="copyright">
+                    trackprotect is een onderdeel van <a href="#">Sound Framework</a>. Alle rechten
+                    voorbehouden
+                </p>
+            </div>
+        </div>--%>
+    </div>
+    <!-- end of footer -->
+    </form>
+</body>
+</html>

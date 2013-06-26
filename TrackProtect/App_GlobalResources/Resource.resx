@@ -1,0 +1,1668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountOverview" xml:space="preserve">
+    <value>Account overview</value>
+  </data>
+  <data name="GetMore" xml:space="preserve">
+    <value>Buy credits or upgrade</value>
+  </data>
+  <data name="AccountOwner" xml:space="preserve">
+    <value>Account owner</value>
+  </data>
+  <data name="AddressLine1" xml:space="preserve">
+    <value>Address line 1</value>
+  </data>
+  <data name="AddressLine2" xml:space="preserve">
+    <value>Address line 2</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agent</value>
+  </data>
+  <data name="Artist" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="BuyCredits" xml:space="preserve">
+    <value>Buy credits</value>
+  </data>
+  <data name="Cellular" xml:space="preserve">
+    <value>Cellular</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="CertificateFile" xml:space="preserve">
+    <value>Certificate file</value>
+  </data>
+  <data name="ChooseProtection" xml:space="preserve">
+    <value>&lt;span class='footerLiteral'&gt;Choose the protection that fits your need!&lt;/span&gt;</value>
+  </data>
+  <data name="ConfirmPurchase" xml:space="preserve">
+    <value>Please confirm your purchase with the button below.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>Credits</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="FacebookID" xml:space="preserve">
+    <value>Facebook ID</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>How it works</value>
+  </data>
+  <data name="Iam" xml:space="preserve">
+    <value>I am</value>
+  </data>
+  <data name="ISRCCode" xml:space="preserve">
+    <value>ISRC handle</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="StageName" xml:space="preserve">
+    <value>Stage or band name</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>CompanyName</value>
+  </data>
+  <data name="LogInAt" xml:space="preserve">
+    <value>Login to TrackProtect</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Login failed. Try again.</value>
+  </data>
+  <data name="MemberSince" xml:space="preserve">
+    <value>Member since</value>
+  </data>
+  <data name="ModifyAccount" xml:space="preserve">
+    <value>Modify account</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NoRegisteredDocuments" xml:space="preserve">
+    <value>You haven’t protected any tracks yet.</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>A password is required.</value>
+  </data>
+  <data name="PersonalInformation" xml:space="preserve">
+    <value>Personal information</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="Producer" xml:space="preserve">
+    <value>Producer</value>
+  </data>
+  <data name="ProvinceState" xml:space="preserve">
+    <value>State/province</value>
+  </data>
+  <data name="Purchase1" xml:space="preserve">
+    <value>You want to buy &lt;span style='color: orange;'&gt;{0}&lt;/span&gt;</value>
+  </data>
+  <data name="ReceiptDownloads" xml:space="preserve">
+    <value>Receipt downloads</value>
+  </data>
+  <data name="ReceiptRecipients" xml:space="preserve">
+    <value>Receipt recipients</value>
+  </data>
+  <data name="RegisteredOn" xml:space="preserve">
+    <value>Reg. date</value>
+  </data>
+  <data name="Residence" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="SENARegNo" xml:space="preserve">
+    <value>SENA reg. no.</value>
+  </data>
+  <data name="Soniall" xml:space="preserve">
+    <value>Soniall</value>
+  </data>
+  <data name="SoniallID" xml:space="preserve">
+    <value>Soniall ID</value>
+  </data>
+  <data name="SubscriptionPlan" xml:space="preserve">
+    <value>Subscription plan</value>
+  </data>
+  <data name="SubscriptionType" xml:space="preserve">
+    <value>Subscription type</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="TwitterID" xml:space="preserve">
+    <value>Twitter ID</value>
+  </data>
+  <data name="UsernameRequired" xml:space="preserve">
+    <value>A username is required.</value>
+  </data>
+  <data name="ValidUntil" xml:space="preserve">
+    <value>Valid until</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Where" xml:space="preserve">
+    <value>Where did you hear about TrackProtect?</value>
+  </data>
+  <data name="DocumentInformation" xml:space="preserve">
+    <value>Document information</value>
+  </data>
+  <data name="FileStoreFailed" xml:space="preserve">
+    <value>&lt;span style='color:red;'&gt;File {0} couldn't be stored.&lt;/span&gt;</value>
+  </data>
+  <data name="FileStoreSuccess" xml:space="preserve">
+    <value>&lt;span style='color:black;'&gt;File {0} stored.&lt;/span&gt;</value>
+  </data>
+  <data name="GotNoCredits" xml:space="preserve">
+    <value>&lt;h1&gt;You haven't got any credits.&lt;/h1&gt;</value>
+  </data>
+  <data name="HasCredits" xml:space="preserve">
+    <value>&lt;h1&gt;You have {0} credits.&lt;/h1&gt;</value>
+  </data>
+  <data name="Lyrics" xml:space="preserve">
+    <value>Lyrics</value>
+  </data>
+  <data name="NoProductDescription" xml:space="preserve">
+    <value>&lt;span style='color: red;'&gt;There is no description for the selected product.&lt;/span&gt;</value>
+  </data>
+  <data name="PaymentResult" xml:space="preserve">
+    <value>Result of your payment</value>
+  </data>
+  <data name="RegisterDocument" xml:space="preserve">
+    <value>Protect your track now!</value>
+  </data>
+  <data name="RegistrationFailed" xml:space="preserve">
+    <value>&lt;span style='color:red;'&gt;Registration failed.&lt;/span&gt;</value>
+  </data>
+  <data name="RegistrationSuccessful" xml:space="preserve">
+    <value>&lt;span style='color:black;'&gt;Registration successful.&lt;/span&gt;</value>
+  </data>
+  <data name="SheetMusic" xml:space="preserve">
+    <value>Sheet music</value>
+  </data>
+  <data name="TransactionFailed" xml:space="preserve">
+    <value>Your transaction failed.</value>
+  </data>
+  <data name="TransactionSuccessful" xml:space="preserve">
+    <value>Your transaction was successful.</value>
+  </data>
+  <data name="YourTrack" xml:space="preserve">
+    <value>Track (mp3 format)</value>
+  </data>
+  <data name="MaskPassword" xml:space="preserve">
+    <value>/Images/mask_password.png</value>
+  </data>
+  <data name="MaskUsername" xml:space="preserve">
+    <value>/Images/mask_username.png</value>
+  </data>
+  <data name="UploadAccount" xml:space="preserve">
+    <value>Account overview</value>
+  </data>
+  <data name="UploadCredentials" xml:space="preserve">
+    <value>Upload your credentials</value>
+  </data>
+  <data name="UploadIdentification" xml:space="preserve">
+    <value>Identification</value>
+  </data>
+  <data name="imgCreateAccount" xml:space="preserve">
+    <value>~/Images/create_account.png</value>
+  </data>
+  <data name="imgDownload" xml:space="preserve">
+    <value>~/Images/certificates-icon.png</value>
+  </data>
+  <data name="imgEdit" xml:space="preserve">
+    <value>~/Images/btn_edit.png</value>
+  </data>
+  <data name="imgLogout" xml:space="preserve">
+    <value>~/Images/btn_logout.png</value>
+  </data>
+  <data name="imgPrint" xml:space="preserve">
+    <value>~/Images/print_overview.png</value>
+  </data>
+  <data name="imgSignup" xml:space="preserve">
+    <value>~/Images/btn_signup.png</value>
+  </data>
+  <data name="imgSignupOver" xml:space="preserve">
+    <value>~/Images/btn_signup_over.png</value>
+  </data>
+  <data name="imgUpload" xml:space="preserve">
+    <value>~/Images/btn_upload.png</value>
+  </data>
+  <data name="imgUploadIdent" xml:space="preserve">
+    <value>~/Images/btn_upload.png</value>
+  </data>
+  <data name="imgUploadTracks" xml:space="preserve">
+    <value>~/Images/btn_protect_track.png</value>
+  </data>
+  <data name="imgChooseProtection" xml:space="preserve">
+    <value>~/Images/chooseprotection.png</value>
+  </data>
+  <data name="imgGo" xml:space="preserve">
+    <value>~/Images/go.png</value>
+  </data>
+  <data name="imgGoForIt" xml:space="preserve">
+    <value>~/Images/go_for_it.png</value>
+  </data>
+  <data name="imgGoOver" xml:space="preserve">
+    <value>~/Images/go_over.png</value>
+  </data>
+  <data name="imgMaskUsername" xml:space="preserve">
+    <value>~/Images/mask_username.png</value>
+  </data>
+  <data name="imgMaskPassword" xml:space="preserve">
+    <value>~/Images/mask_password.png</value>
+  </data>
+  <data name="imgVaultBulk" xml:space="preserve">
+    <value>~/Images/vault_bulk.png</value>
+  </data>
+  <data name="imgVaultMedium" xml:space="preserve">
+    <value>~/Images/vault_medium.png</value>
+  </data>
+  <data name="imgVaultPro" xml:space="preserve">
+    <value>~/Images/vault_pro.png</value>
+  </data>
+  <data name="imgVaultStarter" xml:space="preserve">
+    <value>~/Images/vault_starter.png</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ChangePasswordSuccessful" xml:space="preserve">
+    <value>Your password has been changed successfully</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="ConfirmPasswordRequired" xml:space="preserve">
+    <value>Confirm password is required.</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>E-mail is required.</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>Enter the code</value>
+  </data>
+  <data name="HasCreditsNow" xml:space="preserve">
+    <value>&lt;p&gt;You now have {0} credits.&lt;/p&gt;</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>I agree to the &lt;a style="text-decoration:underline;" href="/av.pdf" target="_blank"&gt;general conditions&lt;/a&gt; and the &lt;a style="text-decoration:underline;" href="/Privacy_statement_TP.pdf" target="_blank"&gt;Privacy Statement&lt;/a&gt; of trackprotect</value>
+  </data>
+  <data name="IamOwner" xml:space="preserve">
+    <value>I am the owner of all content I upload to TrackProtect</value>
+  </data>
+  <data name="imgVaultFmt" xml:space="preserve">
+    <value>~/Images/vault_{0}.png</value>
+  </data>
+  <data name="ModifyPassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ModifyPasswordUseForm" xml:space="preserve">
+    <value>Use the form below to change your password.</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="NewPasswordReq1" xml:space="preserve">
+    <value>Passwords need to be at least</value>
+  </data>
+  <data name="NewPasswordReq2" xml:space="preserve">
+    <value>characters long.</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordMustMatch" xml:space="preserve">
+    <value>The Password and Confirmation Password must match.</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="Referer" xml:space="preserve">
+    <value>Where did you hear about TrackProtect?</value>
+  </data>
+  <data name="RegisterNewUser" xml:space="preserve">
+    <value>Register a new user</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="incAbout" xml:space="preserve">
+    <value>~/Content/about.inc</value>
+  </data>
+  <data name="incBuyProduct" xml:space="preserve">
+    <value>~/Content/buyproduct.inc</value>
+  </data>
+  <data name="incConditions" xml:space="preserve">
+    <value>~/Content/conditions.inc</value>
+  </data>
+  <data name="incContact" xml:space="preserve">
+    <value>~/Content/contact.inc</value>
+  </data>
+  <data name="incDefault" xml:space="preserve">
+    <value>~/Content/default.inc</value>
+  </data>
+  <data name="incHowItWorks" xml:space="preserve">
+    <value>~/Content/howitworks.inc</value>
+  </data>
+  <data name="incMemberContact" xml:space="preserve">
+    <value>~/Content/contact.inc</value>
+  </data>
+  <data name="incMemberHome" xml:space="preserve">
+    <value>~/Content/memberhome.inc</value>
+  </data>
+  <data name="incPay" xml:space="preserve">
+    <value>~/Content/pay.inc</value>
+  </data>
+  <data name="incPayResult" xml:space="preserve">
+    <value>~/Content/payresult.inc</value>
+  </data>
+  <data name="incProtect" xml:space="preserve">
+    <value>~/Content/protect.inc</value>
+  </data>
+  <data name="incRegister" xml:space="preserve">
+    <value>~/Content/register.inc</value>
+  </data>
+  <data name="incRegisterClientInfo" xml:space="preserve">
+    <value>~/Content/registerclientinfo.inc</value>
+  </data>
+  <data name="incRegisterDocument" xml:space="preserve">
+    <value>~/Content/registerdocument.inc</value>
+  </data>
+  <data name="incRhosMovement" xml:space="preserve">
+    <value>~/Content/rhosmovement.inc</value>
+  </data>
+  <data name="incRhosMovement2" xml:space="preserve">
+    <value>~/Content/rhosmovement2.inc</value>
+  </data>
+  <data name="incSelectProduct" xml:space="preserve">
+    <value>~/Content/selectproduct.inc</value>
+  </data>
+  <data name="incShowProduct" xml:space="preserve">
+    <value>~/Content/showproduct.inc</value>
+  </data>
+  <data name="incTerms" xml:space="preserve">
+    <value>~/Content/terms.inc</value>
+  </data>
+  <data name="CaptchaIncorrect" xml:space="preserve">
+    <value>The CAPTCHA code was incorrect.</value>
+  </data>
+  <data name="CouldntRegister" xml:space="preserve">
+    <value>Couldn't save your account information.</value>
+  </data>
+  <data name="DidNotAgree" xml:space="preserve">
+    <value>You did not agree with the terms and conditions of trackprotect.</value>
+  </data>
+  <data name="DidNotGuarantee" xml:space="preserve">
+    <value>You did not confirm you are the owner of the content you are about to upload.</value>
+  </data>
+  <data name="ErrorMessageFmt" xml:space="preserve">
+    <value>{0} Try again.</value>
+  </data>
+  <data name="SecurityCodeIncorrect" xml:space="preserve">
+    <value>The security code is incorrect.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="FinancialOverview" xml:space="preserve">
+    <value>Credit overview</value>
+  </data>
+  <data name="incFinancialOverview" xml:space="preserve">
+    <value>~/Content/financialoverview.inc</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="InvoiceTemplate" xml:space="preserve">
+    <value>/Templates/invoice.template.en.pdf</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Payment method</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="SubjectYourCertificate" xml:space="preserve">
+    <value>Your certificate</value>
+  </data>
+  <data name="SubjectYourInvoice" xml:space="preserve">
+    <value>Your invoice</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>&amp;mdash;</value>
+  </data>
+  <data name="CertificateTemplate" xml:space="preserve">
+    <value>~/Templates/certificate.template.en.pdf</value>
+  </data>
+  <data name="YouMayHaveCredits" xml:space="preserve">
+    <value>You may have credits</value>
+  </data>
+  <data name="Identification" xml:space="preserve">
+    <value>Personal information</value>
+  </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>Coupon code</value>
+  </data>
+  <data name="CoArtists" xml:space="preserve">
+    <value>Artist</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="CertPdf" xml:space="preserve">
+    <value>Cert. pdf</value>
+  </data>
+  <data name="imgBuyCredits" xml:space="preserve">
+    <value>~/Images/btn_buynow.png</value>
+  </data>
+  <data name="MemberHome" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="ClientNotFound" xml:space="preserve">
+    <value>User not found.</value>
+  </data>
+  <data name="imgQuotation" xml:space="preserve">
+    <value>~/Images/btn_quote.png</value>
+  </data>
+  <data name="InvalidAmount" xml:space="preserve">
+    <value>The value you specified is invalid.</value>
+  </data>
+  <data name="Quotation" xml:space="preserve">
+    <value>Quote</value>
+  </data>
+  <data name="QuotationHowMany" xml:space="preserve">
+    <value>Please enter the amount of credits you would like to buy.</value>
+  </data>
+  <data name="RequestQuotation" xml:space="preserve">
+    <value>Request a quote.</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="YourTracks" xml:space="preserve">
+    <value>Your tracks</value>
+  </data>
+  <data name="incFAQ" xml:space="preserve">
+    <value>~/Content/FAQ.inc</value>
+  </data>
+  <data name="ttlAbout" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="ttlBuyProduct" xml:space="preserve">
+    <value>Order overview</value>
+  </data>
+  <data name="ttlChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ttlChangePasswordSuccess" xml:space="preserve">
+    <value>Changed Password Successfully</value>
+  </data>
+  <data name="ttlContact" xml:space="preserve">
+    <value>TrackProtect Contact Information</value>
+  </data>
+  <data name="ttlFAQ" xml:space="preserve">
+    <value>Frequently Asked Questions</value>
+  </data>
+  <data name="ttlFinancialOverview" xml:space="preserve">
+    <value>Financial Overview</value>
+  </data>
+  <data name="ttlGeneralConditions" xml:space="preserve">
+    <value>General Conditions</value>
+  </data>
+  <data name="ttlHome" xml:space="preserve">
+    <value>TrackProtect</value>
+  </data>
+  <data name="ttlHowItWorks" xml:space="preserve">
+    <value>How It Works</value>
+  </data>
+  <data name="ttlLogin" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="ttlMemberContact" xml:space="preserve">
+    <value>TrackProtect contact information</value>
+  </data>
+  <data name="ttlMemberEdit" xml:space="preserve">
+    <value>Change Account</value>
+  </data>
+  <data name="ttlMemberTracks" xml:space="preserve">
+    <value>Your Tracks</value>
+  </data>
+  <data name="ttlPayResult" xml:space="preserve">
+    <value>Payment result</value>
+  </data>
+  <data name="ttlQuotation" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+  <data name="ttlRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ttlRegisterDocument" xml:space="preserve">
+    <value>Register document</value>
+  </data>
+  <data name="ttlSelectProduct" xml:space="preserve">
+    <value>Select product</value>
+  </data>
+  <data name="ttlShowProduct" xml:space="preserve">
+    <value>Show product</value>
+  </data>
+  <data name="ttlUploadCredentials" xml:space="preserve">
+    <value>Upload credentials</value>
+  </data>
+  <data name="ttlManagement" xml:space="preserve">
+    <value>Account management</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="AddTrack" xml:space="preserve">
+    <value>Add track</value>
+  </data>
+  <data name="Artists" xml:space="preserve">
+    <value>Artists</value>
+  </data>
+  <data name="ECL" xml:space="preserve">
+    <value>ECL</value>
+  </data>
+  <data name="Managers" xml:space="preserve">
+    <value>Managers</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="VCL" xml:space="preserve">
+    <value>VCL</value>
+  </data>
+  <data name="ViewTracks" xml:space="preserve">
+    <value>View tracks</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="imgCoupon" xml:space="preserve">
+    <value>~/Images/coupon.png</value>
+  </data>
+  <data name="imgHeaderImageTP" xml:space="preserve">
+    <value>~/Images/headerimageTP-EN.jpg</value>
+  </data>
+  <data name="incCenterColumn" xml:space="preserve">
+    <value>~/Content/defaultcenter.inc</value>
+  </data>
+  <data name="incLeftColumn" xml:space="preserve">
+    <value>~/Content/defaultleft.inc</value>
+  </data>
+  <data name="ItemNo" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="CouponError" xml:space="preserve">
+    <value>You've entered an invalid coupon code too often.</value>
+  </data>
+  <data name="CouponIncorrect" xml:space="preserve">
+    <value>The coupon code you've entered doesn't exist</value>
+  </data>
+  <data name="CouponCodes" xml:space="preserve">
+    <value>Enter Coupon code</value>
+  </data>
+  <data name="CreditOverview" xml:space="preserve">
+    <value>Credit overview</value>
+  </data>
+  <data name="ManagedArtists" xml:space="preserve">
+    <value>Managed artists</value>
+  </data>
+  <data name="RelatedArtists" xml:space="preserve">
+    <value>Relations</value>
+  </data>
+  <data name="TrackOverview" xml:space="preserve">
+    <value>Tracks overview</value>
+  </data>
+  <data name="UserSettings" xml:space="preserve">
+    <value>Account overview</value>
+  </data>
+  <data name="Tracks" xml:space="preserve">
+    <value>Tracks protected</value>
+  </data>
+  <data name="emlWelcomeSubject" xml:space="preserve">
+    <value>Welcome to TrackProtect</value>
+  </data>
+  <data name="LoggedOnTitle" xml:space="preserve">
+    <value>You're logged on as:</value>
+  </data>
+  <data name="spnCredits" xml:space="preserve">
+    <value>Credits: &lt;a href="/Member/FinancialOverview.aspx"&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="spnProtected" xml:space="preserve">
+    <value>Protected tracks: &lt;a href="/Member/MemberTracks.aspx"&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="ArtistEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="imgBuyMore" xml:space="preserve">
+    <value>~/Images/btn_buymore.png</value>
+  </data>
+  <data name="incMemberHome2" xml:space="preserve">
+    <value>~/Content/memberhome2.inc</value>
+  </data>
+  <data name="incPromo" xml:space="preserve">
+    <value>~/Content/promo.inc</value>
+  </data>
+  <data name="txtAccountSettings" xml:space="preserve">
+    <value>Your account settings</value>
+  </data>
+  <data name="txtManagedRelations" xml:space="preserve">
+    <value>Manage relations</value>
+  </data>
+  <data name="txtProtectedTracks" xml:space="preserve">
+    <value>Overview of protected tracks</value>
+  </data>
+  <data name="txtPurchases" xml:space="preserve">
+    <value>Your purchases</value>
+  </data>
+  <data name="ConfirmTemplate" xml:space="preserve">
+    <value>~/Templates/confirm.tpl</value>
+  </data>
+  <data name="imgAccept" xml:space="preserve">
+    <value>~/Images/btn_accept.png</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Your confirmation has been accepted</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Your confirmation has been rejected.</value>
+  </data>
+  <data name="ConfirmLink" xml:space="preserve">
+    <value>http://www.trackprotect.com/Member/Confirm.aspx?id={0}&amp;tp={1}</value>
+  </data>
+  <data name="ConfirmSubject" xml:space="preserve">
+    <value>Please confirm this invitation</value>
+  </data>
+  <data name="InviteRelationsubject" xml:space="preserve">
+    <value>invites you as a co-creator</value>
+  </data>
+  <data name="ManageArtists" xml:space="preserve">
+    <value>Manage artists</value>
+  </data>
+  <data name="ManageRelation" xml:space="preserve">
+    <value>Manage relations</value>
+  </data>
+  <data name="txtManagedArtists" xml:space="preserve">
+    <value>Managed artists</value>
+  </data>
+  <data name="Invitation" xml:space="preserve">
+    <value>Invitation</value>
+  </data>
+  <data name="InvitationExplain" xml:space="preserve">
+    <value>Enter the e-mail address of the person you would like to add to your relations</value>
+  </data>
+  <data name="fmtRequestConfirmError" xml:space="preserve">
+    <value>Your invitation could not be sent. E-mail address {0} was not found.</value>
+  </data>
+  <data name="fmtRequestConfirmValid" xml:space="preserve">
+    <value>Your invitation has been sent to {0}</value>
+  </data>
+  <data name="SenaReadWhy" xml:space="preserve">
+    <value>Read why</value>
+  </data>
+  <data name="SenaRegister" xml:space="preserve">
+    <value>Register here free of charge</value>
+  </data>
+  <data name="TrackName" xml:space="preserve">
+    <value>Name of the track</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot password ?</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>Manage Users</value>
+  </data>
+  <data name="OriginalPassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="PasswordReset" xml:space="preserve">
+    <value>Your password has been reset.</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="tplPasswordReset" xml:space="preserve">
+    <value>~/Templates/pwdreset.tpl</value>
+  </data>
+  <data name="PasswordIsReset" xml:space="preserve">
+    <value>Your password has been reset and a mail with a temporary password has been sent to you.</value>
+  </data>
+  <data name="ManagedUser" xml:space="preserve">
+    <value>Protect track for:</value>
+  </data>
+  <data name="CouponFailure" xml:space="preserve">
+    <value>Coupon code error</value>
+  </data>
+  <data name="CouponSuccess" xml:space="preserve">
+    <value>The coupon code you entered has been accepted.</value>
+  </data>
+  <data name="fmtCouponCredits" xml:space="preserve">
+    <value>&lt;span class="couponcredits"&gt;{0} credits were added to your account. You now have {1} credits.&lt;/span&gt;</value>
+  </data>
+  <data name="fmtInviteFailure" xml:space="preserve">
+    <value>&lt;span class="invitefailure"&gt;Your invitation to {0} could not be sent.&lt;/span&gt;</value>
+  </data>
+  <data name="fmtInviteSent" xml:space="preserve">
+    <value>&lt;span class="invitesuccess"&gt;Invitation to {0} has been sent already, confirmation is pending.&lt;/span&gt;</value>
+  </data>
+  <data name="fmtInviteSuccess" xml:space="preserve">
+    <value>&lt;span class="invitesuccess"&gt;Your invitation to {0} was sent.&lt;/span&gt;</value>
+  </data>
+  <data name="errEmailBadFormat" xml:space="preserve">
+    <value>This is not a valid e-mail address.</value>
+  </data>
+  <data name="errEmailCantSend" xml:space="preserve">
+    <value>The e-mail could not be sent.</value>
+  </data>
+  <data name="SubjectYourRegistration" xml:space="preserve">
+    <value>TrackProtect - {0} has been registered.</value>
+  </data>
+  <data name="tplInvoice" xml:space="preserve">
+    <value>~/Templates/invoice.tpl</value>
+  </data>
+  <data name="tplRegistration" xml:space="preserve">
+    <value>~/Templates/registration.tpl</value>
+  </data>
+  <data name="FirstFileRequiredMessage" xml:space="preserve">
+    <value>A track is required to complete protection, please select track and try again.</value>
+  </data>
+  <data name="FirstFileRequiredTitle" xml:space="preserve">
+    <value>Music track required.</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>exp. date</value>
+  </data>
+  <data name="CouponSubject" xml:space="preserve">
+    <value>Coupon credits succesfully added</value>
+  </data>
+  <data name="tplCouponActivated" xml:space="preserve">
+    <value>~/Templates/couponactivated.tpl</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>GO BACK</value>
+  </data>
+  <data name="EnterUsernameAndPassword" xml:space="preserve">
+    <value>Enter your email address and password to log in</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Sign up here</value>
+  </data>
+  <data name="WhenNoAccount" xml:space="preserve">
+    <value> if you don't have an account.</value>
+  </data>
+  <data name="ControlPanel" xml:space="preserve">
+    <value>Control panel</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>First name is required.</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>Last name is required.</value>
+  </data>
+  <data name="StageNameRequired" xml:space="preserve">
+    <value>Stage name is required.</value>
+  </data>
+  <data name="StageNameChkBxText" xml:space="preserve">
+    <value>Stage name is same as real first and last name.</value>
+  </data>
+  <data name="UploadCredentialsFailed" xml:space="preserve">
+    <value>The upload of your credentials has failed.</value>
+  </data>
+  <data name="UploadCredentialsResult" xml:space="preserve">
+    <value>The result of your credential upload</value>
+  </data>
+  <data name="UploadCredentialsSuccess" xml:space="preserve">
+    <value>The upload of your credentials was successful.</value>
+  </data>
+  <data name="fmtInviteExists" xml:space="preserve">
+    <value>&lt;span class="invitesuccess"&gt;A relation with {0} already exists.&lt;/span&gt;</value>
+  </data>
+  <data name="incBuyProductText" xml:space="preserve">
+    <value>~/Content/buyproducttext.inc</value>
+  </data>
+  <data name="ClickToEdit" xml:space="preserve">
+    <value>Click &lt;a  href="/Member/Profile.aspx"&gt;here to complete.&lt;/a&gt; </value>
+  </data>
+  <data name="NoAddress" xml:space="preserve">
+    <value>Your address is required.</value>
+  </data>
+  <data name="NoFacebookId" xml:space="preserve">
+    <value>You haven't entered your Facebook ID yet.</value>
+  </data>
+  <data name="NoIsrcCode" xml:space="preserve">
+    <value>You haven't entered your ISRC code prefix yet.</value>
+  </data>
+  <data name="NoName" xml:space="preserve">
+    <value>You haven't entered your name yet.</value>
+  </data>
+  <data name="NoOwnerKind" xml:space="preserve">
+    <value>You haven't entered the kind of relation yet.</value>
+  </data>
+  <data name="NoResidence" xml:space="preserve">
+    <value>You haven't entered your city yet.</value>
+  </data>
+  <data name="NoSenaCode" xml:space="preserve">
+    <value>You haven't entered your SENA code yet.</value>
+  </data>
+  <data name="NoTwitterId" xml:space="preserve">
+    <value>You haven't entered your Twitter ID yet.</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Are you sure you want to delete {0}?</value>
+  </data>
+  <data name="TransactionAlreadyCompleted" xml:space="preserve">
+    <value>The transaction received was already completed.</value>
+  </data>
+  <data name="NoArtistsRegistered" xml:space="preserve">
+    <value>You don't have any relations yet, invite them now!</value>
+  </data>
+  <data name="BackToRelations" xml:space="preserve">
+    <value>Back to artist relations</value>
+  </data>
+  <data name="NoCredentials" xml:space="preserve">
+    <value>Your credentials haven't been uploaded yet</value>
+  </data>
+  <data name="PercentComplete" xml:space="preserve">
+    <value>Your profile is {0:P0} complete. </value>
+  </data>
+  <data name="AcceptOwner" xml:space="preserve">
+    <value>Confirm you are the owner of any content you upload</value>
+  </data>
+  <data name="AcceptTerms" xml:space="preserve">
+    <value>Accept the terms and privacy statement.</value>
+  </data>
+  <data name="incQuotation" xml:space="preserve">
+    <value>~/Content/quotation.inc</value>
+  </data>
+  <data name="QuotationSuccess" xml:space="preserve">
+    <value>Your request for a quote has been sent on to the administrative department.</value>
+  </data>
+  <data name="MaskEmailAddress" xml:space="preserve">
+    <value>/Images/mask_emailaddress.png</value>
+  </data>
+  <data name="NewPasswordReq" xml:space="preserve">
+    <value>Passwords need to be at least {0} characters long.</value>
+  </data>
+  <data name="incArtistComments" xml:space="preserve">
+    <value>~/Content/artistcomments.inc</value>
+  </data>
+  <data name="txtPromoPage" xml:space="preserve">
+    <value>RHOS</value>
+  </data>
+  <data name="txtPromoPageInfo" xml:space="preserve">
+    <value>Latest developments RHOS Movement</value>
+  </data>
+  <data name="LogonEmailUnknown" xml:space="preserve">
+    <value>Your e-mail adress {0} is unknown, please register to continue.</value>
+  </data>
+  <data name="UserRightsTooHigh" xml:space="preserve">
+    <value>The user rights you entered are too high</value>
+  </data>
+  <data name="InfoTitle" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="LogonRequiredForPurchase" xml:space="preserve">
+    <value>You need to be logged on to make a purchase.</value>
+  </data>
+  <data name="CooperatingArtists" xml:space="preserve">
+    <value>Co-creators</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>files</value>
+  </data>
+  <data name="TrackInformation" xml:space="preserve">
+    <value>track information</value>
+  </data>
+  <data name="InviteSuccessful" xml:space="preserve">
+    <value>Invite successful</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="QuoteRequests" xml:space="preserve">
+    <value>Quote requests</value>
+  </data>
+  <data name="NoQuotationsUnprocessed" xml:space="preserve">
+    <value>No unprocessed quotation requests</value>
+  </data>
+  <data name="emlQuoteReplyBody" xml:space="preserve">
+    <value>~/Templates/quotereply.tpl</value>
+  </data>
+  <data name="emlQuoteReplySubject" xml:space="preserve">
+    <value>Here is your quotation</value>
+  </data>
+  <data name="BulkPurchase" xml:space="preserve">
+    <value>You want to by {0} credits for {1:C}</value>
+  </data>
+  <data name="QuoteReplyLink" xml:space="preserve">
+    <value>http://www.trackprotect.com/Member/BuyProduct.aspx?tid={0}&amp;pid={1}</value>
+  </data>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="ConfirmRequestorTemplate" xml:space="preserve">
+    <value>~/Templates/confirmrequestor.tpl</value>
+  </data>
+  <data name="Invitations" xml:space="preserve">
+    <value>Invitations</value>
+  </data>
+  <data name="incChangePassword" xml:space="preserve">
+    <value>~/Content/changepassword.inc</value>
+  </data>
+  <data name="BumaRegNo" xml:space="preserve">
+    <value>Buma/Stemra no.</value>
+  </data>
+  <data name="SoundCloud" xml:space="preserve">
+    <value>SoundCloud</value>
+  </data>
+  <data name="ConfirmMgmtTemplate" xml:space="preserve">
+    <value>~/Templates/confirmmgmt.tpl</value>
+  </data>
+  <data name="InfoIncomplete" xml:space="preserve">
+    <value>&lt;span&gt;&lt;b&gt;Your personal information is incomplete.&lt;/b&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="incResetPassword" xml:space="preserve">
+    <value>~/Content/resetpassword.inc</value>
+  </data>
+  <data name="DeleteManagedRelation" xml:space="preserve">
+    <value>Remove the relation with this manager.</value>
+  </data>
+  <data name="DeleteNormalRelation" xml:space="preserve">
+    <value>Remove the relation with this user.</value>
+  </data>
+  <data name="incSubscription" xml:space="preserve">
+    <value>~/Content/subscription.inc</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>Subscription</value>
+  </data>
+  <data name="SubscriptionPurchase" xml:space="preserve">
+    <value>You have selected to buy credits for a managed plan. Please enter the number of credits you would like to buy.</value>
+  </data>
+  <data name="ActivationEmail" xml:space="preserve">
+    <value>Activation e-mail</value>
+  </data>
+  <data name="incActivate" xml:space="preserve">
+    <value>~/Content/activation.inc</value>
+  </data>
+  <data name="InfoGraphicSection" xml:space="preserve">
+    <value>~/Content/DefaultInfoGraphic.inc</value>
+  </data>
+  <data name="UpsSection" xml:space="preserve">
+    <value>~/Content/DefaultUps.inc</value>
+  </data>
+  <data name="AboutSection" xml:space="preserve">
+    <value>~/Content/DefaultAbout.inc</value>
+  </data>
+  <data name="DefaultContactEmail" xml:space="preserve">
+    <value>email</value>
+  </data>
+  <data name="DefaultContactMesage" xml:space="preserve">
+    <value>message</value>
+  </data>
+  <data name="DefaultContactName" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="DefaultContactSend" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="DefaultMenuAboutUs" xml:space="preserve">
+    <value>ABOUT U.S.</value>
+  </data>
+  <data name="DefaultMenuBenefits" xml:space="preserve">
+    <value>BENEFITS</value>
+  </data>
+  <data name="DefaultMenuHowItWorks" xml:space="preserve">
+    <value>HOW IT WORKS</value>
+  </data>
+  <data name="DefaultMenuProducts" xml:space="preserve">
+    <value>PRODUCTS</value>
+  </data>
+  <data name="DefaultNews" xml:space="preserve">
+    <value>NEWS</value>
+  </data>
+  <data name="DefaultProductHeading" xml:space="preserve">
+    <value>PRODUCTS</value>
+  </data>
+  <data name="IntroSection" xml:space="preserve">
+    <value>~/Content/DefaultIntro.inc</value>
+  </data>
+  <data name="FooterSection" xml:space="preserve">
+    <value>~/Content/DefaultFooter.inc</value>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>log out</value>
+  </data>
+  <data name="MyProfileText" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="CouponCodesInfo" xml:space="preserve">
+    <value>Overview of your purchases</value>
+  </data>
+  <data name="MyTracksText" xml:space="preserve">
+    <value>MY TRACKS</value>
+  </data>
+  <data name="ProtectTrackText" xml:space="preserve">
+    <value>PROTECT TRACK</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>REGISTRATION</value>
+  </data>
+  <data name="BuyNow" xml:space="preserve">
+    <value>Buy Now</value>
+  </data>
+  <data name="Ownerkind" xml:space="preserve">
+    <value>Owner kind</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Zipcode</value>
+  </data>
+  <data name="Emailadress" xml:space="preserve">
+    <value>Emailadress</value>
+  </data>
+  <data name="ManText" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="WomanText" xml:space="preserve">
+    <value>Vrouw</value>
+  </data>
+  <data name="FBAccountCreation" xml:space="preserve">
+    <value>~/Templates/nl/FBSignUpNotification.tpl</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>SignUp</value>
+  </data>
+  <data name="ManualSighUpEmailBody" xml:space="preserve">
+    <value>~/Templates/ManualSignUpNotification.tpl</value>
+  </data>
+  <data name="Thankyoumsg" xml:space="preserve">
+    <value>~/Content/Thankyou.inc</value>
+  </data>
+  <data name="ThankyouTitle" xml:space="preserve">
+    <value>Thank You</value>
+  </data>
+  <data name="FAQTop10" xml:space="preserve">
+    <value>~/Content/FAQTop10.inc</value>
+  </data>
+  <data name="SignUpEmailSubject" xml:space="preserve">
+    <value>Confirmation Trackprotect sign up</value>
+  </data>
+  <data name="ManualSighUpEmailSubject" xml:space="preserve">
+    <value>Welcome to Trackprotect</value>
+  </data>
+  <data name="SignUpAuthenticationBody" xml:space="preserve">
+    <value>~/Templates/SupAuth.tpl</value>
+  </data>
+  <data name="InviteManagedArtistSubject" xml:space="preserve">
+    <value>invites you as a managed musician</value>
+  </data>
+  <data name="ConfirmationManagedMusician" xml:space="preserve">
+    <value>Confirmation managed musician</value>
+  </data>
+  <data name="SignupFBAlreadyExist" xml:space="preserve">
+    <value>This email is already registered. Sign up with any other account or do manual sign up.</value>
+  </data>
+  <data name="SignupFBError" xml:space="preserve">
+    <value>Cannot login through facebook account. Please use manual signup.</value>
+  </data>
+  <data name="dfhgfd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InquiryAutoReplyBody" xml:space="preserve">
+    <value>~/Templates/InquiryAutoreply.tpl</value>
+  </data>
+  <data name="InquiryAutoReplySubject" xml:space="preserve">
+    <value>Thank you for your inquiry</value>
+  </data>
+  <data name="CreditPurchaseFailureBody" xml:space="preserve">
+    <value>~/Templates/CreditPurchaseFail.tpl</value>
+  </data>
+  <data name="CreditPurchaseFailureSubject" xml:space="preserve">
+    <value>payment failed</value>
+  </data>
+  <data name="CreditPurchaseSuccessBody" xml:space="preserve">
+    <value>~/Templates/CreditPurchaseSucces.tpl</value>
+  </data>
+  <data name="CreditPurchaseSuccessSubject" xml:space="preserve">
+    <value>credits purchase</value>
+  </data>
+  <data name="ManartEndManaccCnfrmBody" xml:space="preserve">
+    <value>~/Templates/ManartEndManaccCnfrm.tpl</value>
+  </data>
+  <data name="ManartEndManaccCnfrmSubject" xml:space="preserve">
+    <value>Confirmation of termination managed musician</value>
+  </data>
+  <data name="SupportEmailTpl" xml:space="preserve">
+    <value>~/Templates/SupportContact.tpl</value>
+  </data>
+  <data name="BackToTop" xml:space="preserve">
+    <value>Back to top</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="MyManagedArtists" xml:space="preserve">
+    <value>My Managed Artists</value>
+  </data>
+  <data name="MyRelationships" xml:space="preserve">
+    <value>My Relationships</value>
+  </data>
+  <data name="FirstLogon" xml:space="preserve">
+    <value>~/Content/FirstLogon.inc</value>
+  </data>
+  <data name="ContactMsg" xml:space="preserve">
+    <value>Thank you for contacting. Our support team will respond you very soon.</value>
+  </data>
+  <data name="ProfileCompleteion" xml:space="preserve">
+    <value>Thank you for completing your account information.</value>
+  </data>
+  <data name="NotifyToProtectTrack" xml:space="preserve">
+    <value>You haven't protected any track yet.</value>
+  </data>
+  <data name="BackToHome" xml:space="preserve">
+    <value>Back To Home</value>
+  </data>
+  <data name="ProductInfo" xml:space="preserve">
+    <value>Product information</value>
+  </data>
+  <data name="BuyNowSelectProduct" xml:space="preserve">
+    <value>More info</value>
+  </data>
+  <data name="ShareToFriends" xml:space="preserve">
+    <value>Share to {0}'s friends</value>
+  </data>
+  <data name="ShareToMyFriends" xml:space="preserve">
+    <value>Share to {0}'s friends</value>
+  </data>
+  <data name="ShareToMyPages" xml:space="preserve">
+    <value>Share to {0}'s pages</value>
+  </data>
+  <data name="ShareToMyWall" xml:space="preserve">
+    <value>Share to {0}'s wall</value>
+  </data>
+  <data name="ShareToPages" xml:space="preserve">
+    <value>Share to {0}'s pages</value>
+  </data>
+  <data name="FacebookGenreCommunityPostFailureNotify" xml:space="preserve">
+    <value>Failed to post the notification on {0}'s Facebook Community Pages !</value>
+  </data>
+  <data name="FacebookGenreCommunityPostSuccessNotify" xml:space="preserve">
+    <value>Notification for track protect has been posted on {0}'s Facebook Community Page successfully !</value>
+  </data>
+  <data name="FacebookPostOnOwnWallFailureNotify" xml:space="preserve">
+    <value>Something went wrong while posting to {0}'s Facebook timeline !</value>
+  </data>
+  <data name="FacebookPostOnOwnWallSuccessNotify" xml:space="preserve">
+    <value>Your track was succesfully posted to {0}'s Facebook timeline !</value>
+  </data>
+  <data name="PostOnFriendWallFailureNotify" xml:space="preserve">
+    <value>Failed to post the notification to {0}'s Facebook friends !</value>
+  </data>
+  <data name="PostOnFriendWallSuccessNotify" xml:space="preserve">
+    <value>Notification for track protect has been posted to {0}'s Facebook friends successfully !</value>
+  </data>
+  <data name="PostOnMyFriendWallFailureNotify" xml:space="preserve">
+    <value>Something went wrong while posting to {0}'s Facebook timeline.</value>
+  </data>
+  <data name="PostOnMyFriendWallSuccessNotify" xml:space="preserve">
+    <value>Your track was succesfully posted to {0}'s Facebook timeline.</value>
+  </data>
+  <data name="PostOnMyPagesFailureNotify" xml:space="preserve">
+    <value>Something went wrong while posting to {0}'s {1} Facebook page timeline.</value>
+  </data>
+  <data name="PostOnMyPagesSuccessNotify" xml:space="preserve">
+    <value>Your track was succesfully posted to {0}'s {1} Facebook page timeline.</value>
+  </data>
+  <data name="PostOnPagesFailureNotify" xml:space="preserve">
+    <value>Something went wrong while posting to {0}'s {1} Facebook page timeline.</value>
+  </data>
+  <data name="PostOnPagesSuccessNotify" xml:space="preserve">
+    <value>Your track was succesfully posted to {0}'s {1} Facebook page timeline.</value>
+  </data>
+  <data name="SoundCloudPostFailureNotify" xml:space="preserve">
+    <value>Failed to post to Soundcloud.</value>
+  </data>
+  <data name="SoundCloudPostSuccessNotify" xml:space="preserve">
+    <value>Your track was succesfully posted to Soundcloud</value>
+  </data>
+  <data name="TrackProtectedFailureNotify" xml:space="preserve">
+    <value>Something went wrong, your track was not protected.</value>
+  </data>
+  <data name="TrackProtectedSuccessNotify" xml:space="preserve">
+    <value>Your track was successfully protected !</value>
+  </data>
+  <data name="TwitterpostFailureNotify" xml:space="preserve">
+    <value>Failed to post the notification on Twitter !</value>
+  </data>
+  <data name="TwitterpostSuccessNotify" xml:space="preserve">
+    <value>Notification for track protect has been posted on Twitter successfully !</value>
+  </data>
+  <data name="GetMoreText" xml:space="preserve">
+    <value>Get more!</value>
+  </data>
+  <data name="AssistantArtist" xml:space="preserve">
+    <value>Assistant artist</value>
+  </data>
+  <data name="Connections" xml:space="preserve">
+    <value>Connections</value>
+  </data>
+  <data name="ManagementRequest" xml:space="preserve">
+    <value>Management Request</value>
+  </data>
+  <data name="ProtectTrackForYourSelf" xml:space="preserve">
+    <value>Protect track for yourself !</value>
+  </data>
+  <data name="Couplings" xml:space="preserve">
+    <value>Connections</value>
+  </data>
+  <data name="FILESELECT" xml:space="preserve">
+    <value>FILE SELECT</value>
+  </data>
+  <data name="Nofilechosen" xml:space="preserve">
+    <value>No file chosen</value>
+  </data>
+  <data name="UserAccount" xml:space="preserve">
+    <value>User Account</value>
+  </data>
+  <data name="FileNotAllowed" xml:space="preserve">
+    <value>File not allowed!</value>
+  </data>
+  <data name="GetMoreCredits" xml:space="preserve">
+    <value>Get More Credits</value>
+  </data>
+  <data name="SelectMp3File" xml:space="preserve">
+    <value>[Select mp3 file]</value>
+  </data>
+  <data name="ArtistSelectionValidation" xml:space="preserve">
+    <value>Artist selection required !</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="GenreMax3" xml:space="preserve">
+    <value>genre (max 3)</value>
+  </data>
+  <data name="SoundsLikeTagsMax3" xml:space="preserve">
+    <value>sounds like tags (max-3)</value>
+  </data>
+  <data name="SubGenreMax3" xml:space="preserve">
+    <value>subgenre (max 3)</value>
+  </data>
+  <data name="Tagging" xml:space="preserve">
+    <value>Tagging</value>
+  </data>
+  <data name="ConnectWithFacebook" xml:space="preserve">
+    <value>Connect with Facebook</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="TrackNameIsRequired" xml:space="preserve">
+    <value>Track name is required !</value>
+  </data>
+  <data name="FileSizeExceed" xml:space="preserve">
+    <value>FileSize Exceeds the Limits. Please Try uploading smaller size files.</value>
+  </data>
+  <data name="ProtectTrackResult" xml:space="preserve">
+    <value>Protect Track Result</value>
+  </data>
+  <data name="EmailNotValid" xml:space="preserve">
+    <value>Email is not valid.</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="fmtInviteSelf" xml:space="preserve">
+    <value>&lt;span class="invitefailure"&gt;You can not invite yourself.&lt;/span&gt;</value>
+  </data>
+  <data name="ManagementRevoke" xml:space="preserve">
+    <value>Break</value>
+  </data>
+  <data name="ConfirmDeleteRelation" xml:space="preserve">
+    <value>Are you sure you want to delete this ?</value>
+  </data>
+  <data name="InviteRelations" xml:space="preserve">
+    <value>Invite relations</value>
+  </data>
+  <data name="COUPONS" xml:space="preserve">
+    <value>COUPONS</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="FacebookMaxLengthValidation" xml:space="preserve">
+    <value>Facebook text length should not be more than 140 characters.</value>
+  </data>
+  <data name="SoundcloudMaxLengthValidation" xml:space="preserve">
+    <value>Soundcloud text length should not be more than 140 characters.</value>
+  </data>
+  <data name="TwitterMaxLengthValidation" xml:space="preserve">
+    <value>Twitter text length should not be more than 75characters.</value>
+  </data>
+  <data name="ManagePages" xml:space="preserve">
+    <value>ManagePages</value>
+  </data>
+  <data name="AuthenticateWithFacebook" xml:space="preserve">
+    <value>Authenticate</value>
+  </data>
+  <data name="AuthenticatedWithFacebook" xml:space="preserve">
+    <value>Connected as </value>
+  </data>
+  <data name="RemoveAuthentication" xml:space="preserve">
+    <value>Remove Authentication</value>
+  </data>
+  <data name="MapPageGenre" xml:space="preserve">
+    <value>Mapping between page and genre.</value>
+  </data>
+  <data name="MapPageSubgenre" xml:space="preserve">
+    <value>Mapping between page and subgenre.</value>
+  </data>
+  <data name="SaveMapping" xml:space="preserve">
+    <value>Save mapping</value>
+  </data>
+  <data name="SelectOneTag" xml:space="preserve">
+    <value>Please select atleast one tag.</value>
+  </data>
+  <data name="SoundCloudCredRequired" xml:space="preserve">
+    <value>You have no Sound Cloud credentials. Go to profile page to authorize.</value>
+  </data>
+  <data name="FacebookPostOnUserWallFailureNotify" xml:space="preserve">
+    <value>Failed to post the notification on {0}'s Facebook wall !</value>
+  </data>
+  <data name="FacebookPostOnUserWallSuccessNotify" xml:space="preserve">
+    <value>Your track was succesfully posted to {0}'s Facebook timeline.</value>
+  </data>
+  <data name="AddedTags" xml:space="preserve">
+    <value>Added Tags</value>
+  </data>
+  <data name="YourTrackInformation" xml:space="preserve">
+    <value>Protected Track information</value>
+  </data>
+  <data name="FacebookPages" xml:space="preserve">
+    <value>Facebook Pages</value>
+  </data>
+  <data name="GenrePageMappingTable" xml:space="preserve">
+    <value>Show Genre and Page mapping !</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MessageRequired" xml:space="preserve">
+    <value>Message is required !</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Name is required !</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SubjectRequired" xml:space="preserve">
+    <value>Subject is required !</value>
+  </data>
+  <data name="FBAuthenticateFail" xml:space="preserve">
+    <value>Failed to authenticate with Facebook account .</value>
+  </data>
+  <data name="ManagedPlan" xml:space="preserve">
+    <value>Buy more managed plan credits</value>
+  </data>
+  <data name="ShareToUserWall" xml:space="preserve">
+    <value>Share to {0}'s wall</value>
+  </data>
+  <data name="InvitationForManagedArtist" xml:space="preserve">
+    <value>Invitation For Managed Artist</value>
+  </data>
+  <data name="InvitationForRelation" xml:space="preserve">
+    <value>Invitation For Relation</value>
+  </data>
+  <data name="ProtectTrackForManagedArtist" xml:space="preserve">
+    <value>Protect Track For ManagedArtist</value>
+  </data>
+  <data name="ProtectTrackForSelf" xml:space="preserve">
+    <value>Protect Track For Self</value>
+  </data>
+  <data name="NoTrackInfoFound" xml:space="preserve">
+    <value>No information found !</value>
+  </data>
+  <data name="TrackInfoCannotShown" xml:space="preserve">
+    <value>Sorry there is something wrong, So information of this track cannot be shown.</value>
+  </data>
+  <data name="SelectSoundcloud" xml:space="preserve">
+    <value>Please select soundcloud to share the information to other social media.</value>
+  </data>
+  <data name="AccountOverViewTemplate" xml:space="preserve">
+    <value>~/Templates/accountoverviewtemplate.en.pdf</value>
+  </data>
+  <data name="MemberContact" xml:space="preserve">
+    <value>~/Content/contact.inc</value>
+  </data>
+  <data name="ArtistManager" xml:space="preserve">
+    <value>Artist Manager</value>
+  </data>
+  <data name="Musician" xml:space="preserve">
+    <value>Musician</value>
+  </data>
+  <data name="Songwriter" xml:space="preserve">
+    <value>Songwriter</value>
+  </data>
+  <data name="FBTerms" xml:space="preserve">
+    <value>You will be automatically agree to our &lt;a style="text-decoration:underline;" target="_blank" href="/av.pdf"&gt;Terms and conditions&lt;/a&gt; if you connect to trackprotect via Facebook.</value>
+  </data>
+  <data name="TemplateConfirmrelationcreate" xml:space="preserve">
+    <value>~/Templates/confirmrelationcreate.tpl</value>
+  </data>
+  <data name="CouponCode" xml:space="preserve">
+    <value>~/Content/CouponCode.inc</value>
+  </data>
+  <data name="FirstLogonHeader" xml:space="preserve">
+    <value>Complete your account info</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="NewsLiteral" xml:space="preserve">
+    <value>~/Content/News.inc</value>
+  </data>
+</root>

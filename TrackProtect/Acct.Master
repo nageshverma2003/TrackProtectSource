@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Acct.Master.cs" Inherits="TrackProtect.Acct" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="X-UA-Compatible" content="IE=IE8" />		
+    <META NAME="Title" CONTENT="TrackProtect">
+    <title>TrackProtect</title>
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2-vsdoc.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="/Scripts/tpscripts.js"></script>
+    <script type="text/javascript" src="/Scripts/utility.js"></script>
+    <link href="/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        function hideWatermark(theID) {
+            var element = document.getElementById(theID);
+            element.style.backgroundImage = 'none';
+            element.style.backgroundColor = 'white';
+        }
+        function showUsername(theID) {
+            var element = document.getElementById(theID);
+            if (element.value.length == 0)
+                element.style.backgroundImage = 'url("/Images/mask_emailaddress.png")';
+            else
+                element.style.backgroundColor = 'white';
+        }
+        function showPassword(theID) {
+            var element = document.getElementById(theID);
+            if (element.value.length == 0)
+                element.style.backgroundImage = 'url("/Images/mask_password.png")';
+            else
+                element.style.backgroundColor = 'white';
+        }
+        function showWatermark(theID, imageUrl) {
+            var element = document.getElementById(theID);
+            if (element.value.length == 0)
+                element.style.backgroundImage = 'url(imageUrl)';
+            else
+                element.style.backgroundColor = 'white';
+        }
+        function startDownload(url) {
+            window.open(url, 'Download');
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"/>
+</head>
+<body onload="showUsername('ctl00_HeadLoginView_Login1_UserName'); showPassword('ctl00_HeadLoginView_Login1_Password');">
+    <form id="form2" runat="server">
+	<div class="page">
+	    <div class="pageInner">
+			<table cellpadding="0" cellspacing="0" border="0" class="pageTable">
+				<tr valign="top">
+					<td valign="top">
+				        <div class="header">
+							<div id="logoHeader">
+							    <asp:HyperLink runat="server" ID="GoHome" ImageUrl="~/Images/logo.png" NavigateUrl="~/Default.aspx"/>
+							</div>
+							<div id="loginHeader" style="padding-top: 4px;">
+				                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+				                    <AnonymousTemplate>
+				                        <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/Member/MemberHome.aspx" 
+				                            BackColor="White" BorderColor="White" BorderPadding="0" BorderStyle="None" 
+				                            BorderWidth="0" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" 
+							    			style="margin-left: 5px" CreateUserText="Register" 
+											CreateUserUrl="~/Account/Register.aspx"
+											FailureText="<%$ Resources: Resource, LoginFailed %>" 
+                                            onauthenticate="Login1_Authenticate" 
+                                            FailureAction="RedirectToLoginPage">
+													
+				                            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+				                            <LayoutTemplate>
+												<div class="loginBox">
+				                                    <table border="0" cellpadding="0" cellspacing="0" style="padding-left: 2px; padding-top:2px; padding-bottom:2px;border-color:White;border-width:0px;border-style:None;">
+				                                        <tr>
+				                                            <td align="left" 
+				                                                style="color:#696969;background-color:White;font-size:7pt;font-weight:bold;">
+				                                                <asp:Localize ID="Localize1" runat="server" Text="<%$ Resources: Resource, LoginAt %>"/>
+                                                            </td>
+				                                            <td align="center" colspan="3" style="color:Red;">
+				                                                <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+				                                            </td>
+				                                        </tr>
+				                                        <tr style="height: 25px;">
+															<!--
+				                                            <td>
+				                                                <asp:Label ID="UserNameLabel" 
+																		   runat="server" 
+																		   AssociatedControlID="UserName" 
+																		   CssClass="loginLabelStyle"></asp:Label>
+				                                            </td>
+															-->
+				                                            <td style="vertical-align: top;">
+				                                                <asp:TextBox ID="UserName" runat="server" Font-Size="1.0em" TabIndex="1" CssClass="loginText" ToolTip="Gebruikersnaam" onblur="showUsername('ctl00_HeadLoginView_Login1_UserName');" onfocus="hideWatermark('ctl00_HeadLoginView_Login1_UserName');"></asp:TextBox>
+				                                                <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" 
+				                                                    ControlToValidate="UserName" ErrorMessage="<%$ Resources: Resource, UsernameRequired %>" 
+				                                                    ToolTip="<%$ Resources: Resource, UsernameRequired %>" ValidationGroup="ctl00$Login1">*</asp:RequiredFieldValidator>
+				                                            </td>
+				                                            <td rowspan="2" valign="top" style="text-align: right;">
+				                                                <asp:ImageButton ID="LoginButton" runat="server" BackColor="#FFFBFF" 
+				                                                    BorderWidth="0px" CommandName="Login" 
+				                                                    ForeColor="#284775" ValidationGroup="ctl00$Login1" AlternateText="Lo g In" 
+				                                                    ImageUrl="<%$ Resources: resource, imgGo %>" TabIndex="3" />
+				                                            </td>
+				                                        </tr>
+				                                        <tr style="height: 25px;">
+															<!--
+				                                            <td>
+				                                                <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password" CssClass="loginLabelStyle" ></asp:Label>
+				                                            </td>
+															-->
+				                                            <td style="vertical-align: bottom;">
+				                                                <asp:TextBox ID="Password" runat="server" Font-Size="1.0em" TextMode="Password"  CssClass="loginText"
+				                                                    TabIndex="2" ToolTip="Password" onblur="showPassword('ctl00_HeadLoginView_Login1_Password');" 
+                                                                    onfocus="hideWatermark('ctl00_HeadLoginView_Login1_Password');"></asp:TextBox>
+				                                                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" 
+				                                                    ControlToValidate="Password" ErrorMessage="<%$ Resources: Resource, PasswordRequired %>" 
+				                                                    ToolTip="<%$ Resources: Resource, PasswordRequired %>" ValidationGroup="ctl00$Login1">*</asp:RequiredFieldValidator>
+				                                            </td>
+				                                        </tr>
+				                                    </table>
+												</div>
+				                            </LayoutTemplate>
+				                            <LoginButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" 
+				                                BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
+				                            <TextBoxStyle Font-Size="0.8em" />
+				                            <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" Font-Size="0.9em" 
+				                                ForeColor="White" />
+				                        </asp:Login>
+				                    </AnonymousTemplate>
+				                    <LoggedInTemplate>
+										<div style="padding-top: 24px;">
+											<table>
+												<tr>
+													<td valign="center">
+													    <asp:Localize ID="Localize2" runat="server" Text="<%$ Resources: Resource, Welcome %>"/><span class="bold"><asp:Literal ID="HeadLoginName" runat="server"/></span>!
+													</td>
+													<td valign="center">
+								                        <asp:LoginStatus ID="HeadLoginStatus" 
+																		 runat="server"
+																		 LogoutAction="Redirect" 
+																		 LogoutText="Log Out" 
+																		 LogoutPageUrl="~/Default.aspx"/>
+													</td>
+												</tr>
+											</table>
+										</div>
+				                    </LoggedInTemplate>
+				                </asp:LoginView>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td valign="top">
+						<div class="menuWrapper">
+							<table cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout:fixed;">
+								<tr style="height: 24px">
+									<td style="width: 8px; height: 24px;">
+										<asp:Image ID="Image1" ImageUrl="~/Images/menu-left.png" runat="server" AlternateText="bgn" Width="8px"/>
+									</td>
+									<td style="height: 24px; background-color: #ea6730;">
+										
+										    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
+										        <tr>
+										            <td>
+											<asp:Table id="MenuTable" runat="server" CellPadding="0" CellSpacing="0" BorderWidth="0">
+											</asp:Table>
+										            </td>
+                                                    <td width="80px" style="text-align: right;">
+                                                       <asp:Table runat="server" ID="LanguageTable">
+                                                           <asp:TableRow ID="TableRow1" runat="server">
+                                                               <asp:TableCell ID="TableCell1" runat="server">
+                                                                   <asp:Button ID="LanguageUS" Text="EN" runat="server" OnCommand="SelectLanguage" CommandArgument="en-US" BorderStyle="None" Width="32px" BackColor="#EA6730" ForeColor="White" Font-Bold="True" />
+                                                               </asp:TableCell>
+                                                               <asp:TableCell runat="server" ID="TableCell2"><asp:Image runat="server" ID="sep1" ImageUrl="~/Images/Nav_divider.gif"/></asp:TableCell>
+                                                               <asp:TableCell ID="TableCell3" runat="server">
+                                                                   <asp:Button ID="LanguageNL" Text="NL" runat="server" OnCommand="SelectLanguage" CommandArgument="nl-NL" BorderStyle="None" Width="32px" BackColor="#EA6730" ForeColor="White" Font-Bold="True" />
+                                                               </asp:TableCell>
+                                                           </asp:TableRow>
+                                                       </asp:Table> 
+                                                    </td>
+										        </tr>
+										    </table>
+										
+									</td>
+									<td style="width: 8px; height: 24px;">
+										<asp:Image ID="Image2" ImageUrl="~/Images/menu-right.png" runat="server" AlternateText="end" Width="8px"/>
+									</td>
+								</tr>
+							</table>	        
+						</div>
+					</td>
+				</tr>
+				<tr valign="top" class="mainTableRow">
+					<td valign="top" class="main">
+			        <div class="main">
+						<div style="margin: 0px 8px;">
+				            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+						</div>
+                        <div class="stats">
+                            <!-- GoStats JavaScript Based Code -->
+                            <script type="text/javascript" src="http://gostats.com/js/counter.js"></script>
+                            <script type="text/javascript">                                _gos = 'c4.gostats.com'; _goa = 374823;
+                                _got = 2; _goi = 73; _gol = 'counter free hit invisible'; _GoStatsRun();</script>
+                            <noscript><a target="_blank" title="counter free hit invisible" 
+                            href="http://gostats.com"><img alt="counter free hit invisible" 
+                            src="http://c4.gostats.com/bin/count/a_374823/t_2/i_73/counter.png" 
+                            style="border-width:0" /></a></noscript>
+                            <!-- End GoStats JavaScript Based Code --> 
+                        </div>
+			        </div>
+			        <div class="clear">
+			        </div>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td valign="top">
+					    <div class="footer">
+					    </div>
+					</td>
+				</tr>
+			</table>
+	    </div>
+    </div>
+        <script type="text/javascript">
+            if (typeof AjaxControls != 'undefined') {   // (won't be here if disabled/invisible)
+                AjaxControls.Timeout.prototype.hide = function () { $.modal.close(); }
+                AjaxControls.Timeout.prototype.show = function () { $('#basic-modal-content').modal(); }
+            }
+        </script>
+    </form>
+</body>
+</html>

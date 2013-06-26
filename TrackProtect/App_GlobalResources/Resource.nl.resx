@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUs" xml:space="preserve">
+    <value>Over ons</value>
+  </data>
+  <data name="GetMore" xml:space="preserve">
+    <value>Koop credits of een upgrade</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AccountOverview" xml:space="preserve">
+    <value>Account overzicht</value>
+  </data>
+  <data name="AccountOwner" xml:space="preserve">
+    <value>Account eigenaar</value>
+  </data>
+  <data name="AddressLine1" xml:space="preserve">
+    <value>Adresregel 1</value>
+  </data>
+  <data name="AddressLine2" xml:space="preserve">
+    <value>Adresregel 2</value>
+  </data>
+  <data name="Agent" xml:space="preserve">
+    <value>Agent</value>
+  </data>
+  <data name="Artist" xml:space="preserve">
+    <value>Artiest</value>
+  </data>
+  <data name="BuyCredits" xml:space="preserve">
+    <value>Koop credits</value>
+  </data>
+  <data name="Cellular" xml:space="preserve">
+    <value>Mobiel</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificaat</value>
+  </data>
+  <data name="CertificateFile" xml:space="preserve">
+    <value>Certificaat bestand</value>
+  </data>
+  <data name="ChooseProtection" xml:space="preserve">
+    <value>&lt;span class='footerLiteral'&gt;Kies de bescherming die u nodig heeft!&lt;/span&gt;</value>
+  </data>
+  <data name="ConfirmPurchase" xml:space="preserve">
+    <value>Als u de aankop bevestigd met de onderstaande knop wordt u doorgestuurd voor de betaling.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="Credits" xml:space="preserve">
+    <value>Credits</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="FacebookID" xml:space="preserve">
+    <value>Facebook ID</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HowItWorks" xml:space="preserve">
+    <value>Hoe het werkt</value>
+  </data>
+  <data name="Iam" xml:space="preserve">
+    <value>Ik ben</value>
+  </data>
+  <data name="ISRCCode" xml:space="preserve">
+    <value>ISRC handle</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="LogInAt" xml:space="preserve">
+    <value>Login bij TrackProtect</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Login mislukt. Probeer opnieuw.</value>
+  </data>
+  <data name="MemberSince" xml:space="preserve">
+    <value>Lid sinds</value>
+  </data>
+  <data name="ModifyAccount" xml:space="preserve">
+    <value>Account wijzigen</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="NoRegisteredDocuments" xml:space="preserve">
+    <value>Je hebt nog geen tracks beschermd.</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Een wachtwoord is verplicht.</value>
+  </data>
+  <data name="PersonalInformation" xml:space="preserve">
+    <value>Persoonlijke informatie</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Producer" xml:space="preserve">
+    <value>Producent</value>
+  </data>
+  <data name="ProvinceState" xml:space="preserve">
+    <value>Staat/provincie</value>
+  </data>
+  <data name="Purchase1" xml:space="preserve">
+    <value>U wilt &lt;span style='color: orange;'&gt;{0}&lt;/span&gt; kopen.</value>
+  </data>
+  <data name="ReceiptDownloads" xml:space="preserve">
+    <value>Receipt downloads</value>
+  </data>
+  <data name="ReceiptRecipients" xml:space="preserve">
+    <value>Receipt ontvangers</value>
+  </data>
+  <data name="RegisteredOn" xml:space="preserve">
+    <value>Reg. datum</value>
+  </data>
+  <data name="Residence" xml:space="preserve">
+    <value>Woonplaats</value>
+  </data>
+  <data name="SENARegNo" xml:space="preserve">
+    <value>SENA reg. nr.</value>
+  </data>
+  <data name="Soniall" xml:space="preserve">
+    <value>Soniall</value>
+  </data>
+  <data name="SoniallID" xml:space="preserve">
+    <value>Soniall ID</value>
+  </data>
+  <data name="SubscriptionPlan" xml:space="preserve">
+    <value>Subscription plan</value>
+  </data>
+  <data name="SubscriptionType" xml:space="preserve">
+    <value>Anonnement type</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telefoon</value>
+  </data>
+  <data name="Twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="TwitterID" xml:space="preserve">
+    <value>Twitter ID</value>
+  </data>
+  <data name="UsernameRequired" xml:space="preserve">
+    <value>Een gebruikersnaam is verplicht.</value>
+  </data>
+  <data name="ValidUntil" xml:space="preserve">
+    <value>Geldig tot</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welkom</value>
+  </data>
+  <data name="Where" xml:space="preserve">
+    <value>Waar heb je over TrackProtect gehoord?</value>
+  </data>
+  <data name="DocumentInformation" xml:space="preserve">
+    <value>Document informatie</value>
+  </data>
+  <data name="FileStoreFailed" xml:space="preserve">
+    <value>&lt;span style='color:red;'&gt;Bestand {0} kan niet opgeslagen worden.&lt;/span&gt;</value>
+  </data>
+  <data name="FileStoreSuccess" xml:space="preserve">
+    <value>&lt;span style='color:black;'&gt;Bestand {0} opgeslagen.&lt;/span&gt;</value>
+  </data>
+  <data name="GotNoCredits" xml:space="preserve">
+    <value>&lt;h1&gt;U heeft geen credits.&lt;/h1&gt;</value>
+  </data>
+  <data name="HasCredits" xml:space="preserve">
+    <value>&lt;h1&gt;U heeft {0} credits.&lt;/h1&gt;</value>
+  </data>
+  <data name="Lyrics" xml:space="preserve">
+    <value>Songtekst</value>
+  </data>
+  <data name="NoProductDescription" xml:space="preserve">
+    <value>&lt;span style='color: red;'&gt;Er is geen omschrijving voor het geselecteerde product.&lt;/span&gt;</value>
+  </data>
+  <data name="PaymentResult" xml:space="preserve">
+    <value>Resultaat van jouw betaling</value>
+  </data>
+  <data name="RegisterDocument" xml:space="preserve">
+    <value>Protect jouw track nu!</value>
+  </data>
+  <data name="RegistrationFailed" xml:space="preserve">
+    <value>&lt;span style='color:red;'&gt;Registratie mislukt&lt;/span&gt;</value>
+  </data>
+  <data name="RegistrationSuccessful" xml:space="preserve">
+    <value>&lt;span style='color:black;'&gt;Registratie gelukt&lt;/span&gt;</value>
+  </data>
+  <data name="SheetMusic" xml:space="preserve">
+    <value>Bladmuziek</value>
+  </data>
+  <data name="TransactionFailed" xml:space="preserve">
+    <value>De transactie voor de betaling is mislukt.</value>
+  </data>
+  <data name="TransactionSuccessful" xml:space="preserve">
+    <value>De transactie is voor de betaling geslaagd.</value>
+  </data>
+  <data name="YourTrack" xml:space="preserve">
+    <value>Track (mp3 formaat)</value>
+  </data>
+  <data name="MaskPassword" xml:space="preserve">
+    <value>/Images/mask_wachtwoord.png</value>
+  </data>
+  <data name="MaskUsername" xml:space="preserve">
+    <value>/Images/mask_gebruikersnaam.png</value>
+  </data>
+  <data name="UploadAccount" xml:space="preserve">
+    <value>Account overzicht</value>
+  </data>
+  <data name="UploadCredentials" xml:space="preserve">
+    <value>Verzend uw accountgegevens</value>
+  </data>
+  <data name="UploadIdentification" xml:space="preserve">
+    <value>Identificatie</value>
+  </data>
+  <data name="imgCreateAccount" xml:space="preserve">
+    <value>~/Images/nl/create_account.png</value>
+  </data>
+  <data name="imgDownload" xml:space="preserve">
+    <value>~/Images/nl/certificates-icon.png</value>
+  </data>
+  <data name="imgEdit" xml:space="preserve">
+    <value>~/Images/nl/btn_edit.png</value>
+  </data>
+  <data name="imgLogout" xml:space="preserve">
+    <value>~/Images/nl/btn_logout.png</value>
+  </data>
+  <data name="imgPrint" xml:space="preserve">
+    <value>~/Images/nl/print_overzicht.png</value>
+  </data>
+  <data name="imgSignup" xml:space="preserve">
+    <value>~/Images/nl/btn_signup.png</value>
+  </data>
+  <data name="imgSignupOver" xml:space="preserve">
+    <value>~/Images/nl/btn_signup_over.png</value>
+  </data>
+  <data name="imgUpload" xml:space="preserve">
+    <value>~/Images/nl/btn_upload.png</value>
+  </data>
+  <data name="imgUploadIdent" xml:space="preserve">
+    <value>~/Images/nl/btn_upload.png</value>
+  </data>
+  <data name="imgUploadTracks" xml:space="preserve">
+    <value>~/Images/nl/btn_bescherm_track.png</value>
+  </data>
+  <data name="imgChooseProtection" xml:space="preserve">
+    <value>~/Images/nl/chooseprotection.png</value>
+  </data>
+  <data name="imgGo" xml:space="preserve">
+    <value>~/Images/nl/go.png</value>
+  </data>
+  <data name="imgGoForIt" xml:space="preserve">
+    <value>~/Images/nl/go_for_it.png</value>
+  </data>
+  <data name="imgGoOver" xml:space="preserve">
+    <value>~/Images/nl/go_over.png</value>
+  </data>
+  <data name="imgMaskUsername" xml:space="preserve">
+    <value>~/Images/nl/mask_username.png</value>
+  </data>
+  <data name="imgMaskPassword" xml:space="preserve">
+    <value>~/Images/nl/mask_password.png</value>
+  </data>
+  <data name="imgVaultBulk" xml:space="preserve">
+    <value>~/Images/nl/vault_bulk.png</value>
+  </data>
+  <data name="imgVaultMedium" xml:space="preserve">
+    <value>~/Images/nl/vault_medium.png</value>
+  </data>
+  <data name="imgVaultPro" xml:space="preserve">
+    <value>~/Images/nl/vault_pro.png</value>
+  </data>
+  <data name="imgVaultStarter" xml:space="preserve">
+    <value>~/Images/nl/vault_starter.png</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuleer</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Wijzig wachtwoord</value>
+  </data>
+  <data name="ChangePasswordSuccessful" xml:space="preserve">
+    <value>Je wachtwoord is succesvol gewijzigd</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Bevestig wachtwoord</value>
+  </data>
+  <data name="ConfirmPasswordRequired" xml:space="preserve">
+    <value>Bevestigingswachtwoord is verplicht.</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>E-mail is verplicht</value>
+  </data>
+  <data name="EnterCode" xml:space="preserve">
+    <value>Voer code in</value>
+  </data>
+  <data name="HasCreditsNow" xml:space="preserve">
+    <value>&lt;p&gt;U heeft nu {0} credits.&lt;/p&gt;</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Ik ga akkoord met de  &lt;a style="text-decoration:underline;" href="/av.pdf" target="_blank"&gt;algemene voorwaarden&lt;/a&gt; en het &lt;a style="text-decoration:underline;" href="/Privacy_statement_TP.pdf" target="_blank"&gt;privacy statement&lt;/a&gt; van trackprotect</value>
+  </data>
+  <data name="IamOwner" xml:space="preserve">
+    <value>Ik ben eigenaar van alle muziekstukken die ik naar TrackProtect stuur</value>
+  </data>
+  <data name="imgVaultFmt" xml:space="preserve">
+    <value>~/Images/nl/vault_{0}.png</value>
+  </data>
+  <data name="ModifyPassword" xml:space="preserve">
+    <value>Wachtwoord wijzigen</value>
+  </data>
+  <data name="ModifyPasswordUseForm" xml:space="preserve">
+    <value>Verander hier je wachtwoord</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nieuw wachtwoord</value>
+  </data>
+  <data name="NewPasswordReq1" xml:space="preserve">
+    <value>Wachtwoorden moeten minimaal</value>
+  </data>
+  <data name="NewPasswordReq2" xml:space="preserve">
+    <value>tekens lang zijn</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Oud wachtwoord</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
+  <data name="PasswordMustMatch" xml:space="preserve">
+    <value>De door jouw ingevoerde wachtwoorden moeten gelijk zijn.</value>
+  </data>
+  <data name="Pay" xml:space="preserve">
+    <value>Betalen</value>
+  </data>
+  <data name="Referer" xml:space="preserve">
+    <value>Waar heb je over TrackProtect gehoord?</value>
+  </data>
+  <data name="RegisterNewUser" xml:space="preserve">
+    <value>Registreer een nieuwe gebruiker</value>
+  </data>
+  <data name="StageName" xml:space="preserve">
+    <value>Artiest of Band naam</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>First name is required.</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Bedrijfsnaam</value>
+  </data>
+  <data name="StageNameRequired" xml:space="preserve">
+    <value>Stage name is verplicht.</value>
+  </data>
+  <data name="StageNameChkBxText" xml:space="preserve">
+    <value>Hetzelfde als mijn echte naam en achternaam.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Gebruikersnaam</value>
+  </data>
+  <data name="incAbout" xml:space="preserve">
+    <value>~/Content/nl/about.inc</value>
+  </data>
+  <data name="incBuyProduct" xml:space="preserve">
+    <value>~/Content/nl/buyproduct.inc</value>
+  </data>
+  <data name="incConditions" xml:space="preserve">
+    <value>~/Content/nl/conditions.inc</value>
+  </data>
+  <data name="incContact" xml:space="preserve">
+    <value>~/Content/nl/contact.inc</value>
+  </data>
+  <data name="incDefault" xml:space="preserve">
+    <value>~/Content/nl/default.inc</value>
+  </data>
+  <data name="incHowItWorks" xml:space="preserve">
+    <value>~/Content/nl/howitworks.inc</value>
+  </data>
+  <data name="incMemberContact" xml:space="preserve">
+    <value>~/Content/nl/contact.inc</value>
+  </data>
+  <data name="incMemberHome" xml:space="preserve">
+    <value>~/Content/nl/memberhome.inc</value>
+  </data>
+  <data name="incPay" xml:space="preserve">
+    <value>~/Content/nl/pay.inc</value>
+  </data>
+  <data name="incPayResult" xml:space="preserve">
+    <value>~/Content/nl/payresult.inc</value>
+  </data>
+  <data name="incProtect" xml:space="preserve">
+    <value>~/Content/nl/protect.inc</value>
+  </data>
+  <data name="incRegister" xml:space="preserve">
+    <value>~/Content/nl/register.inc</value>
+  </data>
+  <data name="incRegisterClientInfo" xml:space="preserve">
+    <value>~/Content/nl/registerclientinfo.inc</value>
+  </data>
+  <data name="incRegisterDocument" xml:space="preserve">
+    <value>~/Content/nl/registerdocument.inc</value>
+  </data>
+  <data name="incRhosMovement" xml:space="preserve">
+    <value>~/Content/nl/rhosmovement.inc</value>
+  </data>
+  <data name="incRhosMovement2" xml:space="preserve">
+    <value>~/Content/nl/rhosmovement2.inc</value>
+  </data>
+  <data name="incSelectProduct" xml:space="preserve">
+    <value>~/Content/nl/selectproduct.inc</value>
+  </data>
+  <data name="incShowProduct" xml:space="preserve">
+    <value>~/Content/nl/showproduct.inc</value>
+  </data>
+  <data name="incTerms" xml:space="preserve">
+    <value>~/Content/nl/terms.inc</value>
+  </data>
+  <data name="CaptchaIncorrect" xml:space="preserve">
+    <value>De CAPTCHA code was niet correct.</value>
+  </data>
+  <data name="CouldntRegister" xml:space="preserve">
+    <value>Je informatie kon niet geregistreerd worden.</value>
+  </data>
+  <data name="DidNotAgree" xml:space="preserve">
+    <value>U bent niet akkoord gegaan met de voorwaarden.</value>
+  </data>
+  <data name="DidNotGuarantee" xml:space="preserve">
+    <value>U geeft niet de garantie dat wat u uploadt ook uw eigendom is.</value>
+  </data>
+  <data name="ErrorMessageFmt" xml:space="preserve">
+    <value>{0} Probeer opnieuw.</value>
+  </data>
+  <data name="SecurityCodeIncorrect" xml:space="preserve">
+    <value>De veiligheidscode is incorrect.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Bedrag</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="FinancialOverview" xml:space="preserve">
+    <value>Credits overzicht</value>
+  </data>
+  <data name="incFinancialOverview" xml:space="preserve">
+    <value>~/Content/nl/financialoverview.inc</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Factuur</value>
+  </data>
+  <data name="InvoiceTemplate" xml:space="preserve">
+    <value>/Templates/nl/invoice.template.nl.pdf</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Bet. meth.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Prijs</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Aant</value>
+  </data>
+  <data name="SubjectYourCertificate" xml:space="preserve">
+    <value>Jouw certificaat</value>
+  </data>
+  <data name="SubjectYourInvoice" xml:space="preserve">
+    <value>Jouw factuur</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="NoFile" xml:space="preserve">
+    <value>&amp;mdash;</value>
+  </data>
+  <data name="CertificateTemplate" xml:space="preserve">
+    <value>~/Templates/nl/certificate.template.nl.pdf</value>
+  </data>
+  <data name="YouMayHaveCredits" xml:space="preserve">
+    <value>Misschien heb je credits</value>
+  </data>
+  <data name="Identification" xml:space="preserve">
+    <value>Persoonlijke informatie</value>
+  </data>
+  <data name="ActivationCode" xml:space="preserve">
+    <value>Coupon code</value>
+  </data>
+  <data name="CoArtists" xml:space="preserve">
+    <value>Artiest</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="CertPdf" xml:space="preserve">
+    <value>Cert. pdf</value>
+  </data>
+  <data name="imgBuyCredits" xml:space="preserve">
+    <value>~/Images/nl/btn_koopnu.png</value>
+  </data>
+  <data name="MemberHome" xml:space="preserve">
+    <value>Controlepaneel</value>
+  </data>
+  <data name="ClientNotFound" xml:space="preserve">
+    <value>Die persoon is niet bekend bij ons.</value>
+  </data>
+  <data name="imgQuotation" xml:space="preserve">
+    <value>~/Images/nl/btn_offerte.png</value>
+  </data>
+  <data name="InvalidAmount" xml:space="preserve">
+    <value>The waarde die u opgegeven heeft is ongeldig.</value>
+  </data>
+  <data name="Quotation" xml:space="preserve">
+    <value>Offerte</value>
+  </data>
+  <data name="QuotationHowMany" xml:space="preserve">
+    <value>Hoeveel credits wil je kopen?</value>
+  </data>
+  <data name="RequestQuotation" xml:space="preserve">
+    <value>Vraag een offerte aan.</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="YourTracks" xml:space="preserve">
+    <value>Jouw tracks</value>
+  </data>
+  <data name="incFAQ" xml:space="preserve">
+    <value>~/Content/nl/FAQ.inc</value>
+  </data>
+  <data name="ttlAbout" xml:space="preserve">
+    <value>Over ons</value>
+  </data>
+  <data name="ttlBuyProduct" xml:space="preserve">
+    <value>Bestelling overzicht</value>
+  </data>
+  <data name="ttlChangePassword" xml:space="preserve">
+    <value>Wijzing wachtwoord</value>
+  </data>
+  <data name="ttlChangePasswordSuccess" xml:space="preserve">
+    <value>Wachtwoord succesvol gewijzigd</value>
+  </data>
+  <data name="ttlContact" xml:space="preserve">
+    <value>TrackProtect contact informatie</value>
+  </data>
+  <data name="ttlFAQ" xml:space="preserve">
+    <value>Vaak gestelde vragen</value>
+  </data>
+  <data name="ttlFinancialOverview" xml:space="preserve">
+    <value>Financieel overzicht</value>
+  </data>
+  <data name="ttlGeneralConditions" xml:space="preserve">
+    <value>Algemene Voorwaarden</value>
+  </data>
+  <data name="ttlHome" xml:space="preserve">
+    <value>TrackProtect</value>
+  </data>
+  <data name="ttlHowItWorks" xml:space="preserve">
+    <value>Hoe het werkt</value>
+  </data>
+  <data name="ttlLogin" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="ttlMemberContact" xml:space="preserve">
+    <value>TrackProtect contact informatie</value>
+  </data>
+  <data name="ttlMemberEdit" xml:space="preserve">
+    <value>Account wijzigen</value>
+  </data>
+  <data name="ttlMemberTracks" xml:space="preserve">
+    <value>Jouw Tracks</value>
+  </data>
+  <data name="ttlPayResult" xml:space="preserve">
+    <value>Betaalresultaat</value>
+  </data>
+  <data name="ttlQuotation" xml:space="preserve">
+    <value>Offerte</value>
+  </data>
+  <data name="ttlRegister" xml:space="preserve">
+    <value>Registreer</value>
+  </data>
+  <data name="ttlRegisterDocument" xml:space="preserve">
+    <value>Registreer Document</value>
+  </data>
+  <data name="ttlSelectProduct" xml:space="preserve">
+    <value>Selecteer Product</value>
+  </data>
+  <data name="ttlShowProduct" xml:space="preserve">
+    <value>Toon Product</value>
+  </data>
+  <data name="ttlUploadCredentials" xml:space="preserve">
+    <value>Verzend jouw accountgegevens</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>ACCEPTEREN</value>
+  </data>
+  <data name="AddTrack" xml:space="preserve">
+    <value>Track toevoegen</value>
+  </data>
+  <data name="Artists" xml:space="preserve">
+    <value>Artiesten</value>
+  </data>
+  <data name="ECL" xml:space="preserve">
+    <value>ECL</value>
+  </data>
+  <data name="Managers" xml:space="preserve">
+    <value>Managers</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Zoek</value>
+  </data>
+  <data name="VCL" xml:space="preserve">
+    <value>VCL</value>
+  </data>
+  <data name="ViewTracks" xml:space="preserve">
+    <value>Tracks tonen</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Producten</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Totaal</value>
+  </data>
+  <data name="imgCoupon" xml:space="preserve">
+    <value>~/Images/nl/coupon.png</value>
+  </data>
+  <data name="imgHeaderImageTP" xml:space="preserve">
+    <value>~/Images/nl/headerimageTP-NL.jpg</value>
+  </data>
+  <data name="incCenterColumn" xml:space="preserve">
+    <value>~/Content/nl/defaultcenter.inc</value>
+  </data>
+  <data name="incLeftColumn" xml:space="preserve">
+    <value>~/Content/nl/defaultleft.inc</value>
+  </data>
+  <data name="ItremNo" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Subtotaal</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>BTW</value>
+  </data>
+  <data name="CouponError" xml:space="preserve">
+    <value>Je hebt te vaak een ongeldige coupon code ingevoerd.</value>
+  </data>
+  <data name="CouponIncorrect" xml:space="preserve">
+    <value>De coupon code die je ingevoerd hebt bestaat niet</value>
+  </data>
+  <data name="CouponCodes" xml:space="preserve">
+    <value>Couponcode</value>
+  </data>
+  <data name="CreditOverview" xml:space="preserve">
+    <value>Credits overzicht</value>
+  </data>
+  <data name="ManagedArtists" xml:space="preserve">
+    <value>Beheerde artiesten</value>
+  </data>
+  <data name="RelatedArtists" xml:space="preserve">
+    <value>Relaties</value>
+  </data>
+  <data name="TrackOverview" xml:space="preserve">
+    <value>Track overzicht</value>
+  </data>
+  <data name="UserSettings" xml:space="preserve">
+    <value>Account overzicht</value>
+  </data>
+  <data name="Tracks" xml:space="preserve">
+    <value>Beschermde tracks</value>
+  </data>
+  <data name="emlWelcomeSubject" xml:space="preserve">
+    <value>Welkom bij TrackProtect</value>
+  </data>
+  <data name="LoggedOnTitle" xml:space="preserve">
+    <value>Je bent ingelogd als:</value>
+  </data>
+  <data name="spnCredits" xml:space="preserve">
+    <value>Credits: &lt;a href="/Member/FinancialOverview.aspx"&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="spnProtected" xml:space="preserve">
+    <value>Protected tracks: &lt;a href="/Member/MemberTracks.aspx"&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="ArtistEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="imgBuyMore" xml:space="preserve">
+    <value>~/Images/nl/btn_koopmeer.png</value>
+  </data>
+  <data name="incMemberHome2" xml:space="preserve">
+    <value>~/Content/nl/memberhome2.inc</value>
+  </data>
+  <data name="incPromo" xml:space="preserve">
+    <value>~/Content/nl/promo.inc</value>
+  </data>
+  <data name="txtAccountSettings" xml:space="preserve">
+    <value>Jouw gebruikersinstellingen</value>
+  </data>
+  <data name="txtManagedRelations" xml:space="preserve">
+    <value>Beheer relaties</value>
+  </data>
+  <data name="txtProtectedTracks" xml:space="preserve">
+    <value>Overzicht van beschermde tracks</value>
+  </data>
+  <data name="txtPurchases" xml:space="preserve">
+    <value>Overzicht van je aankopen</value>
+  </data>
+  <data name="ConfirmTemplate" xml:space="preserve">
+    <value>~/Templates/nl/confirm.tpl</value>
+  </data>
+  <data name="imgAccept" xml:space="preserve">
+    <value>~/Images/nl/btn_accepteren.png</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Je bevestiging is geaccepteerd</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Jouw bevestiging kon niet worden geaccepteerd.</value>
+  </data>
+  <data name="ConfirmLink" xml:space="preserve">
+    <value>http://www.trackprotect.com/Member/Confirm.aspx?id={0}&amp;tp={1}</value>
+  </data>
+  <data name="ConfirmSubject" xml:space="preserve">
+    <value>Bevestig a.u.b. deze uitnodiging</value>
+  </data>
+  <data name="InviteRelationsubject" xml:space="preserve">
+    <value>heeft je als co-creator uitgenodigd</value>
+  </data>
+  <data name="ManageArtists" xml:space="preserve">
+    <value>Beheer artiesten</value>
+  </data>
+  <data name="ManageRelation" xml:space="preserve">
+    <value>Beheer relaties</value>
+  </data>
+  <data name="txtManagedArtists" xml:space="preserve">
+    <value>Beheerde artiesten</value>
+  </data>
+  <data name="Invitation" xml:space="preserve">
+    <value>Uitnodiging</value>
+  </data>
+  <data name="InvitationExplain" xml:space="preserve">
+    <value>Voer het e-mailadres in van degene die je toe wilt voegen aan je relaties</value>
+  </data>
+  <data name="fmtRequestConfirmError" xml:space="preserve">
+    <value>Je uitnodiging kon niet verzonden worden. E-mail adres {0} niet gevonden.</value>
+  </data>
+  <data name="fmtRequestConfirmValid" xml:space="preserve">
+    <value>Je uitnodiging aan {0} is verzonden.</value>
+  </data>
+  <data name="SenaReadWhy" xml:space="preserve">
+    <value>Lees hier waarom</value>
+  </data>
+  <data name="SenaRegister" xml:space="preserve">
+    <value>Registreer nu kostenloos hier</value>
+  </data>
+  <data name="TrackName" xml:space="preserve">
+    <value>naam van de track</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Wachtwoord vergeten ?</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>Beheer Gebruikers</value>
+  </data>
+  <data name="OriginalPassword" xml:space="preserve">
+    <value>Huidig wachtwoord</value>
+  </data>
+  <data name="PasswordReset" xml:space="preserve">
+    <value>Jouw wachtwoord is gewijzigd.</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Reset Wachtwoord</value>
+  </data>
+  <data name="tplPasswordReset" xml:space="preserve">
+    <value>~/Templates/nl/pwdreset.tpl</value>
+  </data>
+  <data name="PasswordIsReset" xml:space="preserve">
+    <value>Jouw wachtwoord is ge-reset, en een tijdelijk wachtwoord is  naar jouw e-mail adres gestuurd.</value>
+  </data>
+  <data name="ManagedUser" xml:space="preserve">
+    <value>Bescherm track voor:</value>
+  </data>
+  <data name="CouponFailure" xml:space="preserve">
+    <value>Coupon code fout</value>
+  </data>
+  <data name="CouponSuccess" xml:space="preserve">
+    <value>De ingevoerde coupon code is geaccepteerd.</value>
+  </data>
+  <data name="fmtCouponCredits" xml:space="preserve">
+    <value>&lt;span class="couponcredits"&gt;{0} credits zijn toegevoegd aan uw account. U heeft nu {1} credits.&lt;/span&gt;</value>
+  </data>
+  <data name="fmtInviteFailure" xml:space="preserve">
+    <value>&lt;span class="invitefailure"&gt;Uw uitnodiging aan {0} kon niet verzonden worden.&lt;/span&gt;</value>
+  </data>
+  <data name="fmtInviteSent" xml:space="preserve">
+    <value>&lt;span class="invitesuccess"&gt;Invitation to {0} has been sent already, confirmation is pending.&lt;/span&gt;</value>
+  </data>
+  <data name="fmtInviteSuccess" xml:space="preserve">
+    <value>&lt;span class="invitesuccess"&gt;Uw uitnodiging aan {0} is verzonden.&lt;/span&gt;</value>
+  </data>
+  <data name="errEmailBadFormat" xml:space="preserve">
+    <value>De ingevoerde tekst is geen geldig e-mail adres.</value>
+  </data>
+  <data name="errEmailCantSend" xml:space="preserve">
+    <value>De e-mail kon niet verzonden worden.</value>
+  </data>
+  <data name="SubjectYourRegistration" xml:space="preserve">
+    <value>TrackProtect - {0} is geregistreerd.</value>
+  </data>
+  <data name="tplInvoice" xml:space="preserve">
+    <value>~/Templates/nl/invoice.tpl</value>
+  </data>
+  <data name="tplRegistration" xml:space="preserve">
+    <value>~/Templates/nl/registration.tpl</value>
+  </data>
+  <data name="FirstFileRequiredMessage" xml:space="preserve">
+    <value>Een muziek track is nodig voor een volledige registratie.</value>
+  </data>
+  <data name="FirstFileRequiredTitle" xml:space="preserve">
+    <value>Muziek track nodig.</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Verloopdatum</value>
+  </data>
+  <data name="CouponSubject" xml:space="preserve">
+    <value>Coupon credits succesvol toegevoegd </value>
+  </data>
+  <data name="tplCouponActivated" xml:space="preserve">
+    <value>~/Templates/nl/couponactivated.tpl</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>GA TERUG</value>
+  </data>
+  <data name="EnterUsernameAndPassword" xml:space="preserve">
+    <value>Voer je gebruikersnaam en wachtwoord in om in te loggen</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Meld je hier aan</value>
+    <comment> je</comment>
+  </data>
+  <data name="WhenNoAccount" xml:space="preserve">
+    <value>Heb je nog geen account? </value>
+  </data>
+  <data name="ControlPanel" xml:space="preserve">
+    <value>Controle paneel</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>Achternaam is verplicht.</value>
+  </data>
+  <data name="UploadCredentialsFailed" xml:space="preserve">
+    <value>De upload van jouw account gegevens is mislukt.</value>
+  </data>
+  <data name="UploadCredentialsResult" xml:space="preserve">
+    <value>Het resultaat van jouw identiteitsupload</value>
+  </data>
+  <data name="UploadCredentialsSuccess" xml:space="preserve">
+    <value>De upload van jouw identiteitsgegevens is geslaagd.</value>
+  </data>
+  <data name="fmtInviteExists" xml:space="preserve">
+    <value>&lt;span class="invitesuccess"&gt;Een relatie met {0} bestaat al.&lt;/span&gt;</value>
+  </data>
+  <data name="incBuyProductText" xml:space="preserve">
+    <value>~/Content/nl/buyproducttext.inc</value>
+  </data>
+  <data name="ClickToEdit" xml:space="preserve">
+    <value>Klik &lt;a href="/Member/Profile.aspx"&gt;hier om te voltooien.&lt;/a&gt; </value>
+  </data>
+  <data name="NoAddress" xml:space="preserve">
+    <value>Je hebt nog geen adres ingevoerd.</value>
+  </data>
+  <data name="NoFacebookId" xml:space="preserve">
+    <value>Je hebt nog geen Facebook ID ingevuld.</value>
+  </data>
+  <data name="NoIsrcCode" xml:space="preserve">
+    <value>Je hebt nog geen unieke ISRC code ingevoerd.</value>
+  </data>
+  <data name="NoName" xml:space="preserve">
+    <value>Je hebt nog geen naam ingevoerd.</value>
+  </data>
+  <data name="NoOwnerKind" xml:space="preserve">
+    <value>Je hebt nog geen relatiesoort ingevoerd.</value>
+  </data>
+  <data name="NoResidence" xml:space="preserve">
+    <value>Je hebt nog geen woonplaats ingevoerd.</value>
+  </data>
+  <data name="NoSenaCode" xml:space="preserve">
+    <value>Je hebt nog geen SENA code ingevoerd.</value>
+  </data>
+  <data name="NoTwitterId" xml:space="preserve">
+    <value>Je hebt nog geen Twitter ID ingevoerd.</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Bent u zeker dat u {0} wilt wissen?</value>
+  </data>
+  <data name="TransactionAlreadyCompleted" xml:space="preserve">
+    <value>Deze transactie is al eerder voltooid.</value>
+  </data>
+  <data name="NoArtistsRegistered" xml:space="preserve">
+    <value>Je hebt nog geen relaties, nodig ze nu uit!</value>
+  </data>
+  <data name="BackToRelations" xml:space="preserve">
+    <value>Terug naar artiesten relaties</value>
+  </data>
+  <data name="NoCredentials" xml:space="preserve">
+    <value>Je hebt jouw identiteit is nog niet geupload</value>
+  </data>
+  <data name="PercentComplete" xml:space="preserve">
+    <value>Uw profiel is {0:p0} compleet. </value>
+  </data>
+  <data name="AcceptOwner" xml:space="preserve">
+    <value>Bevestiging dat je de eigenaar bent van alles wat je naar TrackProtect zult uploaden ontbreekt.</value>
+  </data>
+  <data name="AcceptTerms" xml:space="preserve">
+    <value>Acceptatie van de voorwaarden en het privacy statement ontbreken.</value>
+  </data>
+  <data name="incQuotation" xml:space="preserve">
+    <value>~/Content/nl/quotation.inc</value>
+  </data>
+  <data name="QuotationSuccess" xml:space="preserve">
+    <value>Jouw aanvraag is in behandeling genomen.</value>
+  </data>
+  <data name="MasEmailAddress" xml:space="preserve">
+    <value>/Images/nl/mask_emailadres.png</value>
+  </data>
+  <data name="NewPasswordReq" xml:space="preserve">
+    <value>Wachtwoorden moeten minimaal {0} tekens lang zijn.</value>
+  </data>
+  <data name="incArtistComments" xml:space="preserve">
+    <value>~/Content/nl/artistcomments.inc</value>
+  </data>
+  <data name="txtPromoPage" xml:space="preserve">
+    <value>RHOS</value>
+  </data>
+  <data name="txtPromoPageInfo" xml:space="preserve">
+    <value>Ontwikellingen RHOS Movement</value>
+  </data>
+  <data name="LogonEmailUnknown" xml:space="preserve">
+    <value>Jouw e-mail adres is niet bekend, registreer nu om door te gaan.</value>
+  </data>
+  <data name="UserRightsTooHigh" xml:space="preserve">
+    <value>De rechten die u ingevoerd heeft zijn te hoog.</value>
+  </data>
+  <data name="InfoTitle" xml:space="preserve">
+    <value>Informatie</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Vrouw</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="LogonRequiredForPurchase" xml:space="preserve">
+    <value>Je moet ingelogd zijn om te kunnen credits te kunnen kopen.</value>
+  </data>
+  <data name="CooperatingArtists" xml:space="preserve">
+    <value>meewerkende artiesten</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>bestanden</value>
+  </data>
+  <data name="TrackInformation" xml:space="preserve">
+    <value>Track gegevens</value>
+  </data>
+  <data name="InviteSuccessful" xml:space="preserve">
+    <value>Uitnodiging gelukt</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administratie</value>
+  </data>
+  <data name="QuoteRequests" xml:space="preserve">
+    <value>Offerte aanvragen</value>
+  </data>
+  <data name="NoQuotationsUnprocessed" xml:space="preserve">
+    <value>Er zijn geen openstaande offerte aanvragen </value>
+  </data>
+  <data name="emlQuoteReplyBody" xml:space="preserve">
+    <value>~/Templates/nl/quotereply.tpl</value>
+  </data>
+  <data name="emlQuoteReplySubject" xml:space="preserve">
+    <value>Hier is je offerte</value>
+  </data>
+  <data name="BulkPurchase" xml:space="preserve">
+    <value>Je wilt {0} credits kopen voor {1:C}</value>
+  </data>
+  <data name="QuoteReplyLink" xml:space="preserve">
+    <value>http://www.trackprotect.com/Member/BuyProduct.aspx?tid={0}&amp;pid={1}</value>
+  </data>
+  <data name="btnAccept" xml:space="preserve">
+    <value>Wijzigen</value>
+  </data>
+  <data name="ConfirmRequestorTemplate" xml:space="preserve">
+    <value>~/Templates/nl/confirmrequestor.tpl</value>
+  </data>
+  <data name="Invitations" xml:space="preserve">
+    <value>Uitnodigingen</value>
+  </data>
+  <data name="incChangePassword" xml:space="preserve">
+    <value>~/Content/nl/changepassword.inc</value>
+  </data>
+  <data name="BumaRegNo" xml:space="preserve">
+    <value>Buma/Stemra nr.</value>
+  </data>
+  <data name="SoundCloud" xml:space="preserve">
+    <value>SoundCloud</value>
+  </data>
+  <data name="ConfirmMgmtTemplate" xml:space="preserve">
+    <value>~/Templates/nl/confirmmgmt.tpl</value>
+  </data>
+  <data name="InfoIncomplete" xml:space="preserve">
+    <value>&lt;span&gt;&lt;b&gt;Je persoonlijke information is niet compleet.&lt;/b&gt;&lt;/span&gt;</value>
+  </data>
+  <data name="incResetPassword" xml:space="preserve">
+    <value>~/Content/nl/resetpassword.inc</value>
+  </data>
+  <data name="DeleteManagedRelation" xml:space="preserve">
+    <value>Verwijder de relatie met deze manager.</value>
+  </data>
+  <data name="DeleteNormalRelation" xml:space="preserve">
+    <value>Verwijder deze relatie.</value>
+  </data>
+  <data name="incSubscription" xml:space="preserve">
+    <value>~/Content/nl/subscription.inc</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>Abonnement</value>
+  </data>
+  <data name="SubscriptionPurchase" xml:space="preserve">
+    <value>Je hebt gekozen om credits voor een managed plan te kopen. Voer het aantal credits dat je wilt kopen in.</value>
+  </data>
+  <data name="ActivationEmail" xml:space="preserve">
+    <value>Activatie e-mail</value>
+  </data>
+  <data name="incActivate" xml:space="preserve">
+    <value>~/Content/nl/activation.inc</value>
+  </data>
+  <data name="InfoGraphicSection" xml:space="preserve">
+    <value>~/Content/nl/DefaultInfoGraphic.inc</value>
+  </data>
+  <data name="UpsSection" xml:space="preserve">
+    <value>~/Content/nl/DefaultUps.inc</value>
+  </data>
+  <data name="AboutSection" xml:space="preserve">
+    <value>~/Content/nl/DefaultAbout.inc</value>
+  </data>
+  <data name="DefaultContactEmail" xml:space="preserve">
+    <value>e-mail</value>
+  </data>
+  <data name="DefaultContactMesage" xml:space="preserve">
+    <value>bericht</value>
+  </data>
+  <data name="DefaultContactName" xml:space="preserve">
+    <value>naam</value>
+  </data>
+  <data name="DefaultContactSend" xml:space="preserve">
+    <value>VERSTUUR</value>
+  </data>
+  <data name="DefaultMenuAboutUs" xml:space="preserve">
+    <value>OVER ONS</value>
+  </data>
+  <data name="DefaultMenuBenefits" xml:space="preserve">
+    <value>VOORDELEN</value>
+  </data>
+  <data name="DefaultMenuHowItWorks" xml:space="preserve">
+    <value>ZO WERKT HET</value>
+  </data>
+  <data name="DefaultMenuProducts" xml:space="preserve">
+    <value>PRODUCTEN</value>
+  </data>
+  <data name="DefaultNews" xml:space="preserve">
+    <value>NIEUWS</value>
+  </data>
+  <data name="DefaultProductHeading" xml:space="preserve">
+    <value>DE PRODUCTEN</value>
+  </data>
+  <data name="IntroSection" xml:space="preserve">
+    <value>~/Content/nl/DefaultIntro.inc</value>
+  </data>
+  <data name="FooterSection" xml:space="preserve">
+    <value>~/Content/nl/DefaultFooter.inc</value>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>log uit</value>
+  </data>
+  <data name="MyProfileText" xml:space="preserve">
+    <value>mijn profiel</value>
+  </data>
+  <data name="CouponCodesInfo" xml:space="preserve">
+    <value>Overzicht van je aankopen</value>
+  </data>
+  <data name="MyTracksText" xml:space="preserve">
+    <value>MIJN TRACKS</value>
+  </data>
+  <data name="ProtectTrackText" xml:space="preserve">
+    <value>BESCHERM TRACK</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>TERUG</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>AANPASSEN</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profiel</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>REGISTRATIE</value>
+  </data>
+  <data name="BuyNow" xml:space="preserve">
+    <value>KOOP NU</value>
+  </data>
+  <data name="Ownerkind" xml:space="preserve">
+    <value>Owner kind</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Emailadress" xml:space="preserve">
+    <value>Emailadres</value>
+  </data>
+  <data name="ManText" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="WomanText" xml:space="preserve">
+    <value>Vrouw</value>
+  </data>
+  <data name="FBAccountCreation" xml:space="preserve">
+    <value>~/Templates/nl/FBSignUpNotification.tpl</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Aanmelden</value>
+  </data>
+  <data name="ManualSighUpEmailBody" xml:space="preserve">
+    <value>~/Templates/nl/ManualSignUpNotification.tpl</value>
+  </data>
+  <data name="Thankyoumsg" xml:space="preserve">
+    <value>~/Content/nl/Thankyou.inc</value>
+  </data>
+  <data name="ThankyouTitle" xml:space="preserve">
+    <value>Thank You</value>
+  </data>
+  <data name="FAQTop10" xml:space="preserve">
+    <value>~/Content/nl/FAQTop10.inc</value>
+  </data>
+  <data name="SignUpEmailSubject" xml:space="preserve">
+    <value>Bevestiging aanmelden bij Trackprotect</value>
+  </data>
+  <data name="ManualSighUpEmailSubject" xml:space="preserve">
+    <value>Welcome bij Trackprotect</value>
+  </data>
+  <data name="SignUpAuthenticationBody" xml:space="preserve">
+    <value>~/Templates/nl/SupAuth.tpl</value>
+  </data>
+  <data name="InviteManagedArtistSubject" xml:space="preserve">
+    <value>nodigt je uit als managed muzikant</value>
+  </data>
+  <data name="ConfirmationManagedMusician" xml:space="preserve">
+    <value>Bevestiging acceptatie managed muzikant</value>
+  </data>
+  <data name="SignupFBAlreadyExist" xml:space="preserve">
+    <value>Deze e-mail is al geregistreerd. Schrijf je in bij een andere account heeft of u handmatig aanmelden.</value>
+  </data>
+  <data name="SignupFBError" xml:space="preserve">
+    <value>Kan niet inloggen via facebook account. Gebruik handmatige aanmelden.</value>
+  </data>
+  <data name="InquiryAutoReplyBody" xml:space="preserve">
+    <value>~/Templates/nl/InquiryAutoreply.tpl</value>
+  </data>
+  <data name="InquiryAutoReplySubject" xml:space="preserve">
+    <value>Bedankt voor jouw vraag</value>
+  </data>
+  <data name="CreditPurchaseFailureBody" xml:space="preserve">
+    <value>~/Templates/nl/CreditPurchaseFail.tpl</value>
+  </data>
+  <data name="CreditPurchaseFailureSubject" xml:space="preserve">
+    <value>aankoop niet gelukt</value>
+  </data>
+  <data name="CreditPurchaseSuccessBody" xml:space="preserve">
+    <value>~/Templates/nl/CreditPurchaseSucces.tpl</value>
+  </data>
+  <data name="CreditPurchaseSuccessSubject" xml:space="preserve">
+    <value>aankoop credits</value>
+  </data>
+  <data name="ManartEndManaccCnfrmBody" xml:space="preserve">
+    <value>~/Templates/nl/ManartEndManaccCnfrm.tpl</value>
+  </data>
+  <data name="ManartEndManaccCnfrmSubject" xml:space="preserve">
+    <value>Bevestiging beeindiging managed muzikant</value>
+  </data>
+  <data name="SupportEmailTpl" xml:space="preserve">
+    <value>~/Templates/nl/SupportContact.tpl</value>
+  </data>
+  <data name="BackToTop" xml:space="preserve">
+    <value>Terug naar boven</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="MyManagedArtists" xml:space="preserve">
+    <value>Mijn Beheerde Artiesten</value>
+  </data>
+  <data name="MyRelationships" xml:space="preserve">
+    <value>Mijn Relaties</value>
+  </data>
+  <data name="FirstLogon" xml:space="preserve">
+    <value>~/Content/nl/FirstLogon.inc</value>
+  </data>
+  <data name="ContactMsg" xml:space="preserve">
+    <value>Hartelijk dank voor uw. Ons support team zal reageren u zeer binnenkort.</value>
+  </data>
+  <data name="ProfileCompleteion" xml:space="preserve">
+    <value>Hartelijk dank voor het invullen van uw accountgegevens.</value>
+  </data>
+  <data name="NotifyToProtectTrack" xml:space="preserve">
+    <value>U heeft niet beschermd elke track nog niet.</value>
+  </data>
+  <data name="BackToHome" xml:space="preserve">
+    <value>Terug naar home</value>
+  </data>
+  <data name="ProductInfo" xml:space="preserve">
+    <value>Product informatie</value>
+  </data>
+  <data name="BuyNowSelectProduct" xml:space="preserve">
+    <value>Meer info</value>
+  </data>
+  <data name="ShareToFriends" xml:space="preserve">
+    <value>Melden aan {0} 's vrienden</value>
+  </data>
+  <data name="ShareToMyFriends" xml:space="preserve">
+    <value>Melden aan {0}'s vrienden</value>
+  </data>
+  <data name="ShareToMyPages" xml:space="preserve">
+    <value>Melden aan {0} 's paginas</value>
+  </data>
+  <data name="ShareToMyWall" xml:space="preserve">
+    <value>Melden aan {0}'s wall</value>
+  </data>
+  <data name="ShareToPages" xml:space="preserve">
+    <value>Melden aan {0}'s paginas</value>
+  </data>
+  <data name="FacebookGenreCommunityPostFailureNotify" xml:space="preserve">
+    <value>Mislukt de melding plaatsen op {0} 's Facebook Community Pages!</value>
+  </data>
+  <data name="FacebookGenreCommunityPostSuccessNotify" xml:space="preserve">
+    <value>Kennisgeving voor spoor protect is geplaatst op {0} 's Facebook Leden Pagina succes!</value>
+  </data>
+  <data name="FacebookPostOnOwnWallFailureNotify" xml:space="preserve">
+    <value>Er is iets misgegaan bij het versturen naar {0} 's Facebook timeline.</value>
+  </data>
+  <data name="FacebookPostOnOwnWallSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol geplaatst op {0} 's Facebook timeline.</value>
+  </data>
+  <data name="GetMoreText" xml:space="preserve">
+    <value>Haal meer!</value>
+  </data>
+  <data name="PostOnFriendWallFailureNotify" xml:space="preserve">
+    <value>Verzuimd om de kennisgeving aan {0} 'Facebook vrienden plaatsen!</value>
+  </data>
+  <data name="PostOnFriendWallSuccessNotify" xml:space="preserve">
+    <value>Kennisgeving voor spoor protect is geplaatst op {0} 's Facebook-vrienden met succes!</value>
+  </data>
+  <data name="PostOnMyFriendWallFailureNotify" xml:space="preserve">
+    <value>Er is iets misgegaan bij het versturen naar {0} 's Facebook timeline</value>
+  </data>
+  <data name="PostOnMyFriendWallSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol geplaatst op {0} 's Facebook timeline.</value>
+  </data>
+  <data name="PostOnMyPagesFailureNotify" xml:space="preserve">
+    <value>Er is iets misgegaan bij het versturen naar {0} 's {1} Facebookpagina timeline.</value>
+  </data>
+  <data name="PostOnMyPagesSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol geplaatst op {0}'s {1} Facebookpagina timeline.</value>
+  </data>
+  <data name="PostOnPagesFailureNotify" xml:space="preserve">
+    <value>Er is iets misgegaan bij het versturen naar {0} 's {1} Facebookpagina timeline.</value>
+  </data>
+  <data name="PostOnPagesSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol geplaatst op {0} 's {1} Facebookpagina timeline!</value>
+  </data>
+  <data name="SoundCloudPostFailureNotify" xml:space="preserve">
+    <value>Verzuimd te plaatsen op Soundcloud.</value>
+  </data>
+  <data name="SoundCloudPostSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol geplaatst op Soundcloud.</value>
+  </data>
+  <data name="TrackProtectedFailureNotify" xml:space="preserve">
+    <value>Er is iets misgegaan, je track is niet beschermd.</value>
+  </data>
+  <data name="TrackProtectedSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol beschermd.</value>
+  </data>
+  <data name="TwitterpostFailureNotify" xml:space="preserve">
+    <value>Kan de melding plaatsen op Twitter !</value>
+  </data>
+  <data name="TwitterpostSuccessNotify" xml:space="preserve">
+    <value>Kennisgeving voor track protect is geplaatst op Twitter met succes !</value>
+  </data>
+  <data name="AssistantArtist" xml:space="preserve">
+    <value>meewerkende artiesten</value>
+  </data>
+  <data name="Connections" xml:space="preserve">
+    <value>koppelingen</value>
+  </data>
+  <data name="ManagementRequest" xml:space="preserve">
+    <value>Beheer Aanvraag</value>
+  </data>
+  <data name="ProtectTrackForYourSelf" xml:space="preserve">
+    <value>Bescherm track voor jezelf !</value>
+  </data>
+  <data name="Couplings" xml:space="preserve">
+    <value>Koppelingen</value>
+  </data>
+  <data name="FILESELECT" xml:space="preserve">
+    <value>KIES BESTAND</value>
+  </data>
+  <data name="Nofilechosen" xml:space="preserve">
+    <value>Gekozen Geen bestand</value>
+  </data>
+  <data name="UserAccount" xml:space="preserve">
+    <value>User Account</value>
+  </data>
+  <data name="FileNotAllowed" xml:space="preserve">
+    <value>Bestand niet toegestaan​​!</value>
+  </data>
+  <data name="GetMoreCredits" xml:space="preserve">
+    <value>Haal meer credits</value>
+  </data>
+  <data name="SelectMp3File" xml:space="preserve">
+    <value>[Selecteer mp3 bestand]</value>
+  </data>
+  <data name="ArtistSelectionValidation" xml:space="preserve">
+    <value>Artiest selectie vereist !</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="GenreMax3" xml:space="preserve">
+    <value>genre (max 3)</value>
+  </data>
+  <data name="SoundsLikeTagsMax3" xml:space="preserve">
+    <value>klinkt als tags (max-3)</value>
+  </data>
+  <data name="SubGenreMax3" xml:space="preserve">
+    <value>subgenre (max 3)</value>
+  </data>
+  <data name="Tagging" xml:space="preserve">
+    <value>Tagging</value>
+  </data>
+  <data name="ConnectWithFacebook" xml:space="preserve">
+    <value>Connect with Facebook</value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="TrackNameIsRequired" xml:space="preserve">
+    <value>Naam van het nummer is verplicht!</value>
+  </data>
+  <data name="FileSizeExceed" xml:space="preserve">
+    <value>FileSize de grenzen overschrijdt. Probeer het uploaden van kleiner formaat bestanden.</value>
+  </data>
+  <data name="ProtectTrackResult" xml:space="preserve">
+    <value>Beschermen Track Resultaat</value>
+  </data>
+  <data name="EmailNotValid" xml:space="preserve">
+    <value>E-mail is niet geldig.</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>verwijderen</value>
+  </data>
+  <data name="fmtInviteSelf" xml:space="preserve">
+    <value>&lt;span class="invitefailure"&gt;Je kunt niet uitnodigen jezelf.&lt;/span&gt;</value>
+  </data>
+  <data name="ManagementRevoke" xml:space="preserve">
+    <value>breken</value>
+  </data>
+  <data name="ConfirmDeleteRelation" xml:space="preserve">
+    <value>Weet u zeker dat u dit wilt verwijderen?</value>
+  </data>
+  <data name="InviteRelations" xml:space="preserve">
+    <value>Nodig relaties</value>
+  </data>
+  <data name="COUPONS" xml:space="preserve">
+    <value>COUPONS</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Bevestiging</value>
+  </data>
+  <data name="FacebookMaxLengthValidation" xml:space="preserve">
+    <value>Facebook tekst lengte mag niet meer dan 140 tekens zijn.</value>
+  </data>
+  <data name="SoundcloudMaxLengthValidation" xml:space="preserve">
+    <value>Soundcloud tekst lengte mag niet meer dan 140 tekens zijn.</value>
+  </data>
+  <data name="TwitterMaxLengthValidation" xml:space="preserve">
+    <value>Twitter tekst lengte mag niet meer dan 75 tekens zijn.</value>
+  </data>
+  <data name="ManagePages" xml:space="preserve">
+    <value>Pagina's beheren</value>
+  </data>
+  <data name="AuthenticateWithFacebook" xml:space="preserve">
+    <value>Authenticate</value>
+  </data>
+  <data name="AuthenticatedWithFacebook" xml:space="preserve">
+    <value>Verbonden als </value>
+  </data>
+  <data name="RemoveAuthentication" xml:space="preserve">
+    <value>Verwijder Authentication</value>
+  </data>
+  <data name="MapPageGenre" xml:space="preserve">
+    <value>Mapping tussen pagina en genre.</value>
+  </data>
+  <data name="MapPageSubgenre" xml:space="preserve">
+    <value>Mapping between page and subgenre.</value>
+  </data>
+  <data name="SaveMapping" xml:space="preserve">
+    <value>Opslaan mapping</value>
+  </data>
+  <data name="SelectOneTag" xml:space="preserve">
+    <value>Selecteer ten minste een tag.</value>
+  </data>
+  <data name="SoundCloudCredRequired" xml:space="preserve">
+    <value>Je hebt geen Sound Cloud geloofsbrieven. Ga naar profielpagina te staan​​.</value>
+  </data>
+  <data name="FacebookPostOnUserWallFailureNotify" xml:space="preserve">
+    <value>Er is iets misgegaan bij het versturen naar {0} 's Facebook timeline.</value>
+  </data>
+  <data name="FacebookPostOnUserWallSuccessNotify" xml:space="preserve">
+    <value>Uw baan is succesvol geplaatst op {0} 's Facebook timeline.</value>
+  </data>
+  <data name="AddedTags" xml:space="preserve">
+    <value>toegevoegde Tags</value>
+  </data>
+  <data name="YourTrackInformation" xml:space="preserve">
+    <value>Beschermd Track informatie</value>
+  </data>
+  <data name="FacebookPages" xml:space="preserve">
+    <value>Facebook pagina's</value>
+  </data>
+  <data name="GenrePageMappingTable" xml:space="preserve">
+    <value>Toon Genre Pagina mapping!</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>inloggen</value>
+  </data>
+  <data name="MessageRequired" xml:space="preserve">
+    <value>Bericht is vereist!</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Naam is vereist !</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>onderwerp</value>
+  </data>
+  <data name="SubjectRequired" xml:space="preserve">
+    <value>Subject is required !</value>
+  </data>
+  <data name="FBAuthenticateFail" xml:space="preserve">
+    <value>Kan niet verifiëren met Facebook account.</value>
+  </data>
+  <data name="ManagedPlan" xml:space="preserve">
+    <value>Koop meer beheerde plannen kredieten</value>
+  </data>
+  <data name="ShareToUserWall" xml:space="preserve">
+    <value>Melden aan {0}'s wall</value>
+  </data>
+  <data name="InvitationForManagedArtist" xml:space="preserve">
+    <value>Uitnodiging voor Managed Artist</value>
+  </data>
+  <data name="InvitationForRelation" xml:space="preserve">
+    <value>Uitnodiging voor Relatie</value>
+  </data>
+  <data name="ProtectTrackForManagedArtist" xml:space="preserve">
+    <value>Bescherm Track Voor Managed Artist</value>
+  </data>
+  <data name="ProtectTrackForSelf" xml:space="preserve">
+    <value>Bescherm Track Voor Self</value>
+  </data>
+  <data name="NoTrackInfoFound" xml:space="preserve">
+    <value>Geen informatie gevonden!</value>
+  </data>
+  <data name="TrackInfoCannotShown" xml:space="preserve">
+    <value>Sorry er is iets mis, dus informatie van deze track kunnen niet worden getoond.</value>
+  </data>
+  <data name="SelectSoundcloud" xml:space="preserve">
+    <value>Selecteer soundcloud om de informatie aan andere sociale media te delen.</value>
+  </data>
+  <data name="AccountOverViewTemplate" xml:space="preserve">
+    <value>~/Templates/nl/accountoverviewtemplate.nl.pdf</value>
+  </data>
+  <data name="MemberContact" xml:space="preserve">
+    <value>~/Content/nl/contact.inc</value>
+  </data>
+  <data name="ArtistManager" xml:space="preserve">
+    <value>Artist Manager</value>
+  </data>
+  <data name="Musician" xml:space="preserve">
+    <value>Musician</value>
+  </data>
+  <data name="Songwriter" xml:space="preserve">
+    <value>Songwriter</value>
+  </data>
+  <data name="FBTerms" xml:space="preserve">
+    <value>Wordt u automatisch akkoord met onze &lt;a style="text-decoration:underline;" target="_blank" href="/av.pdf"&gt; Algemene voorwaarden &lt;/a&gt; als u verbinding trackprotect via Facebook.</value>
+  </data>
+  <data name="TemplateConfirmrelationcreate" xml:space="preserve">
+    <value>~/Templates/nl/confirmrelationcreate.tpl</value>
+  </data>
+  <data name="CouponCode" xml:space="preserve">
+    <value>~/Content/nl/CouponCode.inc</value>
+  </data>
+  <data name="FirstLogonHeader" xml:space="preserve">
+    <value>Voltooi jouw account info</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>selecteer taal</value>
+  </data>
+  <data name="NewsLiteral" xml:space="preserve">
+    <value>~/Content/nl/News.inc</value>
+  </data>
+</root>

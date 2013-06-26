@@ -1,0 +1,1555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BA76D8F-22AE-4DD7-8C3D-219C7B83EF71}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrackProtect</RootNamespace>
+    <AssemblyName>TrackProtect</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NET_4_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\Users\Administrator\Downloads\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>C:\Users\Administrator\Downloads\bin\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>C:\Users\Administrator\Downloads\bin\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock.ClientProfile">
+      <HintPath>..\..\..\..\..\4_Code V 4.4\CustomPhotoBooth\bin\Release\Hammock.ClientProfile.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>C:\Users\Administrator\Downloads\HTML Agility 1.4.6\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer">
+      <HintPath>C:\Users\Administrator\Downloads\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICEPAYAPILibrary, Version=2011.1.31.16944, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator\Downloads\bin\ICEPAYAPILibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\Administrator\Downloads\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Security">
+      <HintPath>C:\Users\Administrator\Downloads\bin\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.4.5.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickTimePlayer">
+      <HintPath>C:\Users\Administrator\Desktop\QuickTimePlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>C:\Users\Administrator\Downloads\bin\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="SID.Captcha">
+      <HintPath>C:\Users\Administrator\Downloads\bin\SID.Captcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Twitterizer2">
+      <HintPath>C:\Users\Administrator\Desktop\Twitterizer2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Management.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Acct.Master" />
+    <Content Include="Activation.aspx" />
+    <Content Include="Admin\AdminChangePassword.aspx" />
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="Admin\logout.aspx" />
+    <Content Include="Admin\ManagePages.aspx" />
+    <Content Include="Admin\QuotationEdit.aspx" />
+    <Content Include="Admin\QuoteRequests.aspx" />
+    <Content Include="App_Readme\Spring.Rest.txt" />
+    <Content Include="App_Readme\Spring.Social.Core.txt" />
+    <Content Include="App_Readme\Spring.Social.Twitter.txt" />
+    <Content Include="ArtistComments.aspx" />
+    <Content Include="Audio.aspx" />
+    <Content Include="Content\about.inc" />
+    <Content Include="Content\aboutOLD2.inc" />
+    <Content Include="Content\activation.inc" />
+    <Content Include="Content\artistcomments.inc" />
+    <Content Include="Content\buyproduct.inc" />
+    <Content Include="Content\buyproducttext.inc" />
+    <Content Include="Content\changepassword.inc" />
+    <Content Include="Content\conditions.inc" />
+    <Content Include="Content\contact.inc" />
+    <Content Include="Content\CouponCode.inc" />
+    <Content Include="Content\default.inc" />
+    <Content Include="Content\DefaultAbout.inc" />
+    <Content Include="Content\defaultcenter.inc" />
+    <Content Include="Content\DefaultFooter.inc" />
+    <Content Include="Content\DefaultInfoGraphic.inc" />
+    <Content Include="Content\DefaultIntro.inc" />
+    <Content Include="Content\defaultleft.inc" />
+    <Content Include="Content\DefaultUps.inc" />
+    <Content Include="Content\Explanation.inc" />
+    <Content Include="Content\FAQTop10.inc" />
+    <Content Include="Content\financialoverview.inc" />
+    <Content Include="Content\FirstLogon.inc" />
+    <Content Include="Content\howitworks.inc" />
+    <Content Include="Content\membercontact.inc" />
+    <Content Include="Content\memberhome.inc" />
+    <Content Include="Content\memberhome2.inc" />
+    <Content Include="Content\News.inc" />
+    <Content Include="Content\nl\about.inc" />
+    <Content Include="Content\nl\activation.inc" />
+    <Content Include="Content\nl\artistcomments.inc" />
+    <Content Include="Content\nl\buyproduct.inc" />
+    <Content Include="Content\nl\buyproducttext.inc" />
+    <Content Include="Content\nl\changepassword.inc" />
+    <Content Include="Content\nl\conditions.inc" />
+    <Content Include="Content\nl\contact.inc" />
+    <Content Include="Content\nl\CouponCode.inc" />
+    <Content Include="Content\nl\default.inc" />
+    <Content Include="Content\nl\DefaultAbout.inc" />
+    <Content Include="Content\nl\defaultcenter.inc" />
+    <Content Include="Content\nl\DefaultFooter.inc" />
+    <Content Include="Content\nl\DefaultInfoGraphic.inc" />
+    <Content Include="Content\nl\DefaultIntro.inc" />
+    <Content Include="Content\nl\defaultleft.inc" />
+    <Content Include="Content\nl\DefaultUps.inc" />
+    <Content Include="Content\nl\Explanation.inc" />
+    <Content Include="Content\nl\FAQTop10.inc" />
+    <Content Include="Content\nl\financialoverview.inc" />
+    <Content Include="Content\nl\FirstLogon.inc" />
+    <Content Include="Content\nl\howitworks.inc" />
+    <Content Include="Content\nl\membercontact.inc" />
+    <Content Include="Content\nl\memberhome.inc" />
+    <Content Include="Content\nl\memberhome2.inc" />
+    <Content Include="Content\nl\News.inc" />
+    <Content Include="Content\nl\pay.inc" />
+    <Content Include="Content\nl\payresult.inc" />
+    <Content Include="Content\nl\protect.inc" />
+    <Content Include="Content\nl\quotation.inc" />
+    <Content Include="Content\nl\register.inc" />
+    <Content Include="Content\nl\registerdocument.inc" />
+    <Content Include="Content\nl\resetpassword.inc" />
+    <Content Include="Content\nl\rhosmovement.inc" />
+    <Content Include="Content\nl\rhosmovement2.inc" />
+    <Content Include="Content\nl\selectproduct.inc" />
+    <Content Include="Content\nl\showproduct.inc" />
+    <Content Include="Content\nl\subscription.inc" />
+    <Content Include="Content\nl\terms.inc" />
+    <Content Include="Content\nl\Thankyou.inc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\pay.inc" />
+    <Content Include="Content\payresult.inc" />
+    <Content Include="Content\protect.inc" />
+    <Content Include="Content\quotation.inc" />
+    <Content Include="Content\register.inc" />
+    <Content Include="Content\registerdocument.inc" />
+    <Content Include="Content\resetpassword.inc" />
+    <Content Include="Content\rhosmovement.inc" />
+    <Content Include="Content\rhosmovement2.inc" />
+    <Content Include="Content\selectproduct.inc" />
+    <Content Include="Content\showproduct.inc" />
+    <Content Include="Content\subscription.inc" />
+    <Content Include="Content\terms.inc" />
+    <Content Include="Content\Thankyou.inc">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="css\app.css" />
+    <Content Include="css\demo.css" />
+    <Content Include="css\general_foundicons.css" />
+    <Content Include="css\general_foundicons_ie7.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.ui.accordion.css" />
+    <Content Include="css\jquery.ui.all.css" />
+    <Content Include="css\jquery.ui.autocomplete.css" />
+    <Content Include="css\jquery.ui.base.css" />
+    <Content Include="css\jquery.ui.button.css" />
+    <Content Include="css\jquery.ui.core.css" />
+    <Content Include="css\jquery.ui.datepicker.css" />
+    <Content Include="css\jquery.ui.dialog.css" />
+    <Content Include="css\jquery.ui.menu.css" />
+    <Content Include="css\jquery.ui.progressbar.css" />
+    <Content Include="css\jquery.ui.resizable.css" />
+    <Content Include="css\jquery.ui.selectable.css" />
+    <Content Include="css\jquery.ui.slider.css" />
+    <Content Include="css\jquery.ui.spinner.css" />
+    <Content Include="css\jquery.ui.tabs.css" />
+    <Content Include="css\jquery.ui.theme.css" />
+    <Content Include="css\jquery.ui.tooltip.css" />
+    <Content Include="css\mp3-player-button.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="FirstLogon.aspx" />
+    <Content Include="fonts\general_foundicons.svg" />
+    <Content Include="GettingStarted.txt" />
+    <Content Include="HtmlTemplates\accountoverview_template_en_form.html" />
+    <Content Include="HtmlTemplates\accountoverview_template_en_form1.html" />
+    <Content Include="HtmlTemplates\certificate_template_en_form.html" />
+    <Content Include="HtmlTemplates\invoice_template_en_form.html" />
+    <Content Include="HtmlTemplates\nl\accountoverview_template_nl_form.html" />
+    <Content Include="HtmlTemplates\nl\certificate_template_nl_form.html" />
+    <Content Include="HtmlTemplates\nl\invoice_template_nl_form.html" />
+    <Content Include="idlookup.aspx" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\animated-overlay.gif" />
+    <Content Include="Images\benefits.png" />
+    <Content Include="Images\btn_protect_track.png" />
+    <Content Include="Images\change-disabled.png" />
+    <Content Include="Images\coupontp.png" />
+    <Content Include="Images\ctl00_MainContent_CouponImage.png" />
+    <Content Include="Images\foundation\orbit\bullets.jpg" />
+    <Content Include="Images\foundation\orbit\left-arrow-small.png" />
+    <Content Include="Images\foundation\orbit\left-arrow.png" />
+    <Content Include="Images\foundation\orbit\loading.gif" />
+    <Content Include="Images\foundation\orbit\mask-black.png" />
+    <Content Include="Images\foundation\orbit\pause-black.png" />
+    <Content Include="Images\foundation\orbit\right-arrow-small.png" />
+    <Content Include="Images\foundation\orbit\right-arrow.png" />
+    <Content Include="Images\foundation\orbit\rotator-black.png" />
+    <Content Include="Images\foundation\orbit\timer-black.png" />
+    <Content Include="Images\f_icon.png" />
+    <Content Include="Images\guitarguy.jpg" />
+    <Content Include="Images\header-bg.jpg" />
+    <Content Include="Images\headerimageTP.jpg" />
+    <Content Include="Images\icon-avatar.png" />
+    <Content Include="Images\icon-coupon.jpg" />
+    <Content Include="Images\icon-credits.jpg" />
+    <Content Include="Images\icon-mic.jpg" />
+    <Content Include="Images\icon-profile.jpg" />
+    <Content Include="Images\icon-rhos.jpg" />
+    <Content Include="Images\icon-tracks.jpg" />
+    <Content Include="Images\icons.png" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\infographic-share.png" />
+    <Content Include="Images\infographic.png" />
+    <Content Include="Images\logo-footer.png" />
+    <Content Include="Images\logo-icon.png" />
+    <Content Include="Images\logo1.png" />
+    <Content Include="Images\logo_template.png" />
+    <Content Include="Images\mask_emailaddress.png" />
+    <Content Include="Images\mengtafel.jpg" />
+    <Content Include="Images\menu-background.org.png" />
+    <Content Include="Images\menu-sep.png" />
+    <Content Include="Images\nl\btn_bescherm_track.png" />
+    <Content Include="Images\nl\btn_betaalnu.png" />
+    <Content Include="Images\nl\btn_betaalnu_over.png" />
+    <Content Include="Images\nl\btn_upload_over.png" />
+    <Content Include="Images\nl\certificates-icon.png" />
+    <Content Include="Images\nl\headerimageTP.jpg" />
+    <Content Include="Images\nl\mask_emailadres.png" />
+    <Content Include="Images\nl\menubtn-about.png" />
+    <Content Include="Images\nl\menubtn-clientinfo.png" />
+    <Content Include="Images\nl\menubtn-contact.png" />
+    <Content Include="Images\nl\menubtn-home.png" />
+    <Content Include="Images\nl\menubtn-regdoc-dis.png" />
+    <Content Include="Images\nl\menubtn-regdoc.png" />
+    <Content Include="Images\nl\reltype0.png" />
+    <Content Include="Images\nl\reltype1.png" />
+    <Content Include="Images\pageBack2.png" />
+    <Content Include="Images\play-icon.png" />
+    <Content Include="Images\printoverview_voorbeeld.png" />
+    <Content Include="Images\reltype0.png" />
+    <Content Include="Images\reltype1.png" />
+    <Content Include="Images\smalllogo_template.png" />
+    <Content Include="Images\socialmedia\clean.png" />
+    <Content Include="Images\socialmedia\facebook-logo.png" />
+    <Content Include="Images\socialmedia\Redcross.png" />
+    <Content Include="Images\socialmedia\soundcloud-icon.png" />
+    <Content Include="Images\socialmedia\Twitter-Icon.png" />
+    <Content Include="Images\soundcloud.png" />
+    <Content Include="Images\stage.jpg" />
+    <Content Include="Images\s_icon.png" />
+    <Content Include="Images\to_logo.png" />
+    <Content Include="Images\t_icon.png" />
+    <Content Include="Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Images\ui-icons_222222_256x240.png" />
+    <Content Include="Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Images\ui-icons_454545_256x240.png" />
+    <Content Include="Images\ui-icons_888888_256x240.png" />
+    <Content Include="Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Images\vault_starter.old.png" />
+    <Content Include="Images\video-play-icon.jpg" />
+    <Content Include="Images\video.jpg" />
+    <Content Include="Images\voorbeeld_buyextracredits.png" />
+    <Content Include="Images\js\foundation\foundation.alerts.js" />
+    <Content Include="Images\js\foundation\foundation.clearing.js" />
+    <Content Include="Images\js\foundation\foundation.cookie.js" />
+    <Content Include="Images\js\foundation\foundation.dropdown.js" />
+    <Content Include="Images\js\foundation\foundation.forms.js" />
+    <Content Include="Images\js\foundation\foundation.joyride.js" />
+    <Content Include="Images\js\foundation\foundation.js" />
+    <Content Include="Images\js\foundation\foundation.magellan.js" />
+    <Content Include="Images\js\foundation\foundation.orbit.js" />
+    <Content Include="Images\js\foundation\foundation.placeholder.js" />
+    <Content Include="Images\js\foundation\foundation.reveal.js" />
+    <Content Include="Images\js\foundation\foundation.section.js" />
+    <Content Include="Images\js\foundation\foundation.tooltips.js" />
+    <Content Include="Images\js\foundation\foundation.topbar.js" />
+    <Content Include="Images\js\vendor\custom.modernizr.js" />
+    <Content Include="Images\js\vendor\jquery.js" />
+    <Content Include="Images\js\vendor\zepto.js" />
+    <Content Include="Images\window-close-icon.png" />
+    <Content Include="image\Accept.png" />
+    <Content Include="image\arrow-right-black.gif" />
+    <Content Include="image\arrow-right-black.png" />
+    <Content Include="image\arrow-right-white.gif" />
+    <Content Include="image\arrow-right-white.png" />
+    <Content Include="image\Decline.png" />
+    <Content Include="js\foundation\foundation.alerts.js" />
+    <Content Include="js\foundation\foundation.clearing.js" />
+    <Content Include="js\foundation\foundation.cookie.js" />
+    <Content Include="js\foundation\foundation.dropdown.js" />
+    <Content Include="js\foundation\foundation.forms.js" />
+    <Content Include="js\foundation\foundation.joyride.js" />
+    <Content Include="js\foundation\foundation.js" />
+    <Content Include="js\foundation\foundation.magellan.js" />
+    <Content Include="js\foundation\foundation.orbit.js" />
+    <Content Include="js\foundation\foundation.placeholder.js" />
+    <Content Include="js\foundation\foundation.reveal.js" />
+    <Content Include="js\foundation\foundation.section.js" />
+    <Content Include="js\foundation\foundation.tooltips.js" />
+    <Content Include="js\foundation\foundation.topbar.js" />
+    <Content Include="js\vendor\custom.modernizr.js" />
+    <Content Include="js\vendor\jquery.js" />
+    <Content Include="js\vendor\zepto.js" />
+    <Content Include="js\zepto.scroll.js" />
+    <Content Include="Libraries\ICEPAYAPILibrary.dll" />
+    <Content Include="Libraries\Infragistics2.WebUI.Shared.v8.1.dll" />
+    <Content Include="Libraries\Infragistics2.WebUI.Shared.v8.1.xml" />
+    <Content Include="Libraries\Infragistics2.WebUI.WebDateChooser.v8.1.dll" />
+    <Content Include="Libraries\Infragistics2.WebUI.WebDateChooser.v8.1.xml" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Member\Audio.aspx" />
+    <Content Include="Member\CouponCode.aspx" />
+    <Content Include="Member\Download.aspx" />
+    <Content Include="Member\FAQ.aspx" />
+    <Content Include="Member\Invitation.aspx" />
+    <Content Include="Member\InviteFriends.aspx" />
+    <Content Include="Member\ManageRelations.aspx" />
+    <Content Include="Member\MemberContact.aspx" />
+    <Content Include="Member\Profile.aspx" />
+    <Content Include="Member\ProfileInfo.aspx" />
+    <Content Include="Member\ProfilePrint.aspx" />
+    <Content Include="Member\ProfileReg.aspx" />
+    <Content Include="Member\RegisterDocSelection.aspx" />
+    <Content Include="Member\ThankYou.aspx" />
+    <Content Include="Member\UploadConfirmation.aspx" />
+    <Content Include="Scripts\facebookForAdmin.js" />
+    <Content Include="Scripts\twitter.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\ui\jquery.ui.core.js" />
+    <Content Include="Scripts\ui\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\ui\jquery.ui.widget.js" />
+    <Content Include="script\mp3-player-button.js" />
+    <Content Include="script\soundmanager2.js" />
+    <Content Include="Social\fbconnectforadmin.aspx" />
+    <Content Include="Social\fbsignup.aspx" />
+    <Content Include="Social\soundcloud.aspx" />
+    <Content Include="Member\PlayMusic.ashx" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="scss\app.scss" />
+    <None Include="scss\general_foundicons.scss" />
+    <None Include="scss\general_foundicons_ie7.scss" />
+    <None Include="scss\normalize.scss" />
+    <None Include="scss\_settings.scss" />
+    <None Include="Templates\confirmrelationcreate.tpl" />
+    <None Include="Templates\nl\confirmrelationcreate.tpl" />
+    <None Include="Templates\nl\ProtectTrackRenewNotify.tpl" />
+    <None Include="Templates\nl\SupAuth.tpl" />
+    <Content Include="swf\soundmanager2.swf" />
+    <Content Include="swf\soundmanager2_debug.swf" />
+    <Content Include="swf\soundmanager2_flash9.swf" />
+    <Content Include="swf\soundmanager2_flash9_debug.swf" />
+    <Content Include="ThankYou.aspx" />
+    <None Include="App_Code\DAL\SocialMediaDAL.xsc">
+      <DependentUpon>SocialMediaDAL.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\DAL\SocialMediaDAL.xsd" />
+    <None Include="App_Code\DAL\SocialMediaDAL.xss">
+      <DependentUpon>SocialMediaDAL.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\DAL\SocialNetworkAccessToken.xsc">
+      <DependentUpon>SocialNetworkAccessToken.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\DAL\SocialNetworkAccessToken.xsd" />
+    <None Include="App_Code\DAL\SocialNetworkAccessToken.xss">
+      <DependentUpon>SocialNetworkAccessToken.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\DAL\SocialNetworkUser_Info.xsc">
+      <DependentUpon>SocialNetworkUser_Info.xsd</DependentUpon>
+    </None>
+    <None Include="App_Code\DAL\SocialNetworkUser_Info.xsd" />
+    <None Include="App_Code\DAL\SocialNetworkUser_Info.xss">
+      <DependentUpon>SocialNetworkUser_Info.xsd</DependentUpon>
+    </None>
+    <None Include="Content\nl\FAQ.inc_OLD_19-06-2012- 15.50" />
+    <None Include="css\fonts\leaguegothic-italic-webfont.eot" />
+    <None Include="css\fonts\leaguegothic-italic-webfont.woff" />
+    <None Include="css\fonts\leaguegothic-regular-webfont.eot" />
+    <None Include="css\fonts\leaguegothic-regular-webfont.woff" />
+    <None Include="css\fonts\Socialico.otf" />
+    <None Include="fonts\general_foundicons.eot" />
+    <None Include="fonts\general_foundicons.ttf" />
+    <None Include="fonts\general_foundicons.woff" />
+    <None Include="fonts\leaguegothic-italic-webfont.eot" />
+    <None Include="fonts\leaguegothic-italic-webfont.woff" />
+    <None Include="fonts\leaguegothic-regular-webfont.eot" />
+    <None Include="fonts\leaguegothic-regular-webfont.woff" />
+    <None Include="fonts\Socialico.otf" />
+    <None Include="Images\.directory" />
+    <Content Include="Profile.Master" />
+    <Content Include="Logon.Master" />
+    <None Include="Templates\confirmrequestor.tpl" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Member\Subscription.aspx" />
+    <Content Include="Scripts\facebook.js" />
+    <Content Include="Social\fbconnect.aspx" />
+    <Content Include="Social\scconnect.aspx" />
+    <Content Include="Social\twconnect.aspx" />
+    <Content Include="Scripts\jquery-ui-1.9.0.custom.js" />
+    <Content Include="Scripts\jquery-ui-1.9.0.custom.min.js" />
+    <Content Include="Message.aspx" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\popup.js" />
+    <Content Include="Templates\confirmmgmt.tpl" />
+    <None Include="Templates\CreditExpireNotify.tpl" />
+    <None Include="Templates\CreditPurchaseFail.tpl" />
+    <None Include="Templates\CreditPurchaseSucces.tpl" />
+    <None Include="Templates\FBSignUpNotification.tpl" />
+    <None Include="Templates\InquiryAutoreply.tpl" />
+    <None Include="Templates\ManaccPaymentFail.tpl" />
+    <None Include="Templates\ManaccSignupPaymentSucces.tpl" />
+    <None Include="Templates\ManartEndManaccCnfrm.tpl" />
+    <None Include="Templates\ManualSignUpNotification.tpl" />
+    <None Include="Templates\nl\confirmrequestor.tpl" />
+    <Content Include="Templates\nl\confirmmgmt.tpl" />
+    <None Include="Templates\nl\CreditExpireNotify.tpl" />
+    <None Include="Templates\nl\CreditPurchaseFail.tpl" />
+    <None Include="Templates\nl\CreditPurchaseSucces.tpl" />
+    <None Include="Templates\nl\FBSignUpNotification.tpl" />
+    <None Include="Templates\nl\InquiryAutoreply.tpl" />
+    <None Include="Templates\nl\ManaccPaymentFail.tpl" />
+    <None Include="Templates\nl\ManaccSignupPaymentSucces.tpl" />
+    <None Include="Templates\nl\ManartEndManaccCnfrm.tpl" />
+    <None Include="Templates\nl\ManualSignUpNotification.tpl" />
+    <None Include="Templates\nl\quotereply.tpl" />
+    <None Include="Templates\nl\SupportContact.tpl" />
+    <None Include="Templates\ProtectTrackRenewNotify.tpl" />
+    <None Include="Templates\quotereply.tpl" />
+    <Content Include="Images\certificates-icon.png" />
+    <Content Include="Images\cp_rhos.png" />
+    <Content Include="Images\edit-icon.png" />
+    <Content Include="Images\Facebook-Button.png" />
+    <Content Include="Images\nl\cp_rhos.png" />
+    <Content Include="Images\pdf-icon.png" />
+    <Content Include="Images\SoundCloud-Button.png" />
+    <Content Include="Images\Twitter-Button.png" />
+    <Content Include="Member\CouponFailure.aspx" />
+    <Content Include="Member\CouponSuccess.aspx" />
+    <Content Include="Member\ErrorDialog.aspx" />
+    <Content Include="Member\ErrorPage.aspx" />
+    <Content Include="Member\HowItWorks.aspx" />
+    <Content Include="Member\InviteFailure.aspx" />
+    <Content Include="Member\InviteSuccess.aspx" />
+    <Content Include="Member\Promo.aspx" />
+    <Content Include="Member\QuotationSuccess.aspx" />
+    <Content Include="Member\UploadCredentialResult.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="Content\FAQ.inc" />
+    <Content Include="Content\nl\FAQ.inc" />
+    <Content Include="Content\nl\promo.inc" />
+    <Content Include="Content\promo.inc" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="GeneralConditions.aspx" />
+    <Content Include="Images\btn_accept.png" />
+    <Content Include="Images\btn_accept_over.png" />
+    <Content Include="Images\btn_buymore.png" />
+    <Content Include="Images\btn_buymore_over.png" />
+    <Content Include="Images\btn_buynow.png" />
+    <Content Include="Images\btn_buynow_over.png" />
+    <Content Include="Images\btn_change.png" />
+    <Content Include="Images\btn_change_over.png" />
+    <Content Include="Images\btn_download_over.png" />
+    <Content Include="Images\btn_edit_over.png" />
+    <Content Include="Images\btn_goforit.png" />
+    <Content Include="Images\btn_new.png" />
+    <Content Include="Images\btn_over.png" />
+    <Content Include="Images\btn_purchasenow.png" />
+    <Content Include="Images\btn_purchasenow_over.png" />
+    <Content Include="Images\btn_quote.png" />
+    <Content Include="Images\btn_quote_over.png" />
+    <Content Include="Images\btn_upload_over.png" />
+    <Content Include="Images\btn_quotation.png" />
+    <Content Include="Images\coupon.png" />
+    <Content Include="Images\cp-sprite.png" />
+    <Content Include="Images\cp_coupon.png" />
+    <Content Include="Images\cp_credits.png" />
+    <Content Include="Images\cp_managed.png" />
+    <Content Include="Images\cp_related.png" />
+    <Content Include="Images\cp_settings.png" />
+    <Content Include="Images\cp_tracks.png" />
+    <Content Include="Images\cp_user.png" />
+    <Content Include="Images\flag_nl.png" />
+    <Content Include="Images\flag_us.png" />
+    <Content Include="Images\headerimageTP-EN.jpg" />
+    <Content Include="Images\invoicelogoTP.png" />
+    <Content Include="Images\nl\btn_accepteren.png" />
+    <Content Include="Images\nl\btn_accepteren_over.png" />
+    <Content Include="Images\nl\btn_buymore.png" />
+    <Content Include="Images\nl\btn_koopmeer.png" />
+    <Content Include="Images\nl\btn_koopmeer_over.png" />
+    <Content Include="Images\nl\btn_koopnu.png" />
+    <Content Include="Images\nl\btn_koopnu_over.png" />
+    <Content Include="Images\nl\btn_offerte.png" />
+    <Content Include="Images\nl\btn_offerte_over.png" />
+    <Content Include="Images\nl\coupon.png" />
+    <Content Include="Images\nl\cp_coupon.png" />
+    <Content Include="Images\nl\cp_credits.png" />
+    <Content Include="Images\nl\cp_managed.png" />
+    <Content Include="Images\nl\cp_related.png" />
+    <Content Include="Images\nl\cp_settings.png" />
+    <Content Include="Images\nl\cp_tracks.png" />
+    <Content Include="Images\nl\cp_user.png" />
+    <Content Include="Images\nl\headerimageTP-NL.jpg" />
+    <Content Include="Images\nl\print_overzicht.png" />
+    <Content Include="Images\nl\remove-user.png" />
+    <Content Include="Images\pageBack.png" />
+    <Content Include="Images\print_overview.png" />
+    <Content Include="Images\remove-user.png" />
+    <Content Include="Member\AccountOverview.aspx" />
+    <Content Include="Member\ArtistManagement.aspx" />
+    <Content Include="Member\ArtistRelation.aspx" />
+    <Content Include="Member\Confirm.aspx" />
+    <Content Include="Member\FinancialOverview.aspx" />
+    <Content Include="Member\MemberTracks.aspx" />
+    <Content Include="Member\Quotation.aspx" />
+    <Content Include="Member\RegisterDocManaged.aspx" />
+    <Content Include="Member\ViewDocManaged.aspx" />
+    <Content Include="ProductPage.aspx" />
+    <Content Include="Promo.aspx" />
+    <Content Include="Scripts\soundcloud.js" />
+    <Content Include="Scripts\tpscripts.js" />
+    <Content Include="SelectProduct.aspx" />
+    <Content Include="Social\facebook.aspx" />
+    <Content Include="Social\soundcloud1.aspx" />
+    <Content Include="Social\twitter.aspx" />
+    <Content Include="Terms.aspx" />
+    <Content Include="Images\btn_print.png" />
+    <Content Include="Images\btn_printpage.png" />
+    <Content Include="Images\btn_uploadident.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Member\MemberHome.aspx" />
+    <Content Include="Member\RegisterDocument.aspx" />
+    <Content Include="Member\UploadCredentials.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="test.aspx" />
+    <Content Include="Twitter\TwitterCallback.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="CaptchaControl.aspx" />
+    <Content Include="Member\SelectProduct.aspx" />
+    <Content Include="Member\BuyProduct.aspx" />
+    <Content Include="Images\menu-center.png" />
+    <Content Include="Scripts\showdiv.js" />
+    <Content Include="Member\ShowProduct.aspx" />
+    <Content Include="Images\btn_signup_over.png" />
+    <Content Include="Images\btn_signup.png" />
+    <Content Include="Images\chooseprotection.png" />
+    <Content Include="Images\go_over.png" />
+    <Content Include="Images\go.png" />
+    <Content Include="Images\logo_tp.gif" />
+    <Content Include="Images\Nav_divider.gif" />
+    <Content Include="Images\rhos_badge.png" />
+    <Content Include="Images\vault_bulk.png" />
+    <Content Include="Images\vault_pro.png" />
+    <Content Include="Images\vault_starter.png" />
+    <Content Include="Member\PayResult.aspx" />
+    <Content Include="Images\menu-background.png" />
+    <Content Include="Images\menubtn-about.png" />
+    <Content Include="Images\menubtn-clientinfo.png" />
+    <Content Include="Images\menubtn-contact.png" />
+    <Content Include="Images\menubtn-home.png" />
+    <Content Include="Images\menubtn-regdoc.png" />
+    <Content Include="Images\menubtn-regdoc-dis.png" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Images\background-grey-gradient.png" />
+    <Content Include="Images\screen_sep.png" />
+    <Content Include="Images\menu-left.png" />
+    <Content Include="Images\menu-right.png" />
+    <Content Include="Images\rhos_badge1.png" />
+    <Content Include="HowItWorks.aspx" />
+    <Content Include="Member\MemberContact1.aspx" />
+    <Content Include="Member\About.aspx" />
+    <Content Include="Images\create_account.png" />
+    <Content Include="Images\hor_sep.png" />
+    <Content Include="Images\go_for_it.png" />
+    <Content Include="Images\vault_medium.png" />
+    <Content Include="Images\upload_tracks.png" />
+    <Content Include="Scripts\watermark.js" />
+    <Content Include="Images\btn_edit.png" />
+    <Content Include="Images\btn_upload.png" />
+    <Content Include="Images\btn_logout.png" />
+    <Content Include="Images\mask_password.png" />
+    <Content Include="Images\btn_download.png" />
+    <Content Include="Images\mask_username.png" />
+    <Content Include="Scripts\utility.js" />
+    <Content Include="Images\btn_createaccount.png" />
+    <Content Include="Images\btn_uploadtracks.png" />
+    <Content Include="Images\mask_gebruikersnaam.png" />
+    <Content Include="Images\mask_wachtwoord.png" />
+    <Content Include="DownloadHandler.ashx" />
+    <Content Include="Config\icepay.config" />
+    <Content Include="Config\ideal.config" />
+    <Content Include="Config\trackprotect.config" />
+    <Content Include="Member\MemberEdit.aspx" />
+    <Content Include="Images\nl\btn_createaccount.png" />
+    <Content Include="Images\nl\btn_download.png" />
+    <Content Include="Images\nl\btn_edit.png" />
+    <Content Include="Images\nl\btn_logout.png" />
+    <Content Include="Images\nl\btn_print.png" />
+    <Content Include="Images\nl\btn_printpage.png" />
+    <Content Include="Images\nl\btn_signup.png" />
+    <Content Include="Images\nl\btn_signup_over.png" />
+    <Content Include="Images\nl\btn_upload.png" />
+    <Content Include="Images\nl\btn_uploadident.png" />
+    <Content Include="Images\nl\btn_uploadtracks.png" />
+    <Content Include="Images\nl\chooseprotection.png" />
+    <Content Include="Images\nl\create_account.png" />
+    <Content Include="Images\nl\go.png" />
+    <Content Include="Images\nl\go_for_it.png" />
+    <Content Include="Images\nl\go_over.png" />
+    <Content Include="Images\nl\hor_sep.png" />
+    <Content Include="Images\nl\logo.png" />
+    <Content Include="Images\nl\logo_tp.gif" />
+    <Content Include="Images\nl\mask_gebruikersnaam.png" />
+    <Content Include="Images\nl\mask_password.png" />
+    <Content Include="Images\nl\mask_username.png" />
+    <Content Include="Images\nl\mask_wachtwoord.png" />
+    <Content Include="Images\nl\menu-background.png" />
+    <Content Include="Images\nl\menu-center.png" />
+    <Content Include="Images\nl\menu-left.png" />
+    <Content Include="Images\nl\menu-right.png" />
+    <Content Include="Images\nl\Nav_divider.gif" />
+    <Content Include="Images\nl\rhos_badge.png" />
+    <Content Include="Images\nl\rhos_badge1.png" />
+    <Content Include="Images\nl\screen_sep.png" />
+    <Content Include="Images\nl\upload_tracks.png" />
+    <Content Include="Images\nl\vault_bulk.png" />
+    <Content Include="Images\nl\vault_medium.png" />
+    <Content Include="Images\nl\vault_pro.png" />
+    <Content Include="Images\nl\vault_starter.png" />
+    <None Include="Templates\confirm.tpl" />
+    <None Include="Templates\couponactivated.tpl" />
+    <None Include="Templates\nl\couponactivated.tpl" />
+    <None Include="Templates\nl\registration.tpl" />
+    <None Include="Templates\registration.tpl" />
+    <None Include="Templates\invoice.tpl" />
+    <None Include="Templates\nl\confirm.tpl" />
+    <None Include="Templates\nl\invoice.tpl" />
+    <None Include="Templates\nl\pwdreset.tpl" />
+    <None Include="Templates\pwdreset.tpl" />
+    <None Include="Templates\SupAuth.tpl" />
+    <None Include="Templates\SupportContact.tpl" />
+    <Content Include="trackprotect_repos\certificates\TrackProtect Root Certificate.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="trackprotect_repos\certificates\TrackProtect Signing Certificate.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acct.Master.cs">
+      <DependentUpon>Acct.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acct.Master.designer.cs">
+      <DependentUpon>Acct.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Management.aspx.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Management.aspx.designer.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Activation.aspx.cs">
+      <DependentUpon>Activation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activation.aspx.designer.cs">
+      <DependentUpon>Activation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminChangePassword.aspx.cs">
+      <DependentUpon>AdminChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminChangePassword.aspx.designer.cs">
+      <DependentUpon>AdminChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagePages.aspx.cs">
+      <DependentUpon>ManagePages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManagePages.aspx.designer.cs">
+      <DependentUpon>ManagePages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuotationEdit.aspx.cs">
+      <DependentUpon>QuotationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuotationEdit.aspx.designer.cs">
+      <DependentUpon>QuotationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\QuoteRequests.aspx.cs">
+      <DependentUpon>QuoteRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\QuoteRequests.aspx.designer.cs">
+      <DependentUpon>QuoteRequests.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\DAL\SocialMediaDAL.cs">
+      <DependentUpon>SocialMediaDAL.xsd</DependentUpon>
+    </Content>
+    <Content Include="App_Code\DAL\SocialNetworkAccessToken.cs">
+      <DependentUpon>SocialNetworkAccessToken.xsd</DependentUpon>
+    </Content>
+    <Content Include="App_Code\DAL\SocialNetworkUser_Info.cs">
+      <DependentUpon>SocialNetworkUser_Info.xsd</DependentUpon>
+    </Content>
+    <Compile Include="Audio.aspx.cs">
+      <DependentUpon>Audio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Audio.aspx.designer.cs">
+      <DependentUpon>Audio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BitlyApi.cs" />
+    <Compile Include="idlookup.aspx.cs">
+      <DependentUpon>idlookup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="idlookup.aspx.designer.cs">
+      <DependentUpon>idlookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Audio.aspx.cs">
+      <DependentUpon>Audio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Audio.aspx.designer.cs">
+      <DependentUpon>Audio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Invitation.aspx.cs">
+      <DependentUpon>Invitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Invitation.aspx.designer.cs">
+      <DependentUpon>Invitation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\InviteFriends.aspx.cs">
+      <DependentUpon>InviteFriends.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\InviteFriends.aspx.designer.cs">
+      <DependentUpon>InviteFriends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ManageRelations.aspx.cs">
+      <DependentUpon>ManageRelations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ManageRelations.aspx.designer.cs">
+      <DependentUpon>ManageRelations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\PlayMusic.ashx.cs">
+      <DependentUpon>PlayMusic.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\RegisterDocSelection.aspx.cs">
+      <DependentUpon>RegisterDocSelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\RegisterDocSelection.aspx.designer.cs">
+      <DependentUpon>RegisterDocSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\UploadConfirmation.aspx.cs">
+      <DependentUpon>UploadConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\UploadConfirmation.aspx.designer.cs">
+      <DependentUpon>UploadConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Facebook\Page.cs" />
+    <Compile Include="Social\fbconnectforadmin.aspx.cs">
+      <DependentUpon>fbconnectforadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\fbconnectforadmin.aspx.designer.cs">
+      <DependentUpon>fbconnectforadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\soundcloud.aspx.cs">
+      <DependentUpon>soundcloud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\soundcloud.aspx.designer.cs">
+      <DependentUpon>soundcloud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Data\SoundCloud\ActivityType.cs" />
+    <Content Include="App_Data\SoundCloud\ApiCommand.cs" />
+    <Content Include="App_Data\SoundCloud\Comment.cs" />
+    <Content Include="App_Data\SoundCloud\Connection.cs" />
+    <Content Include="App_Data\SoundCloud\ConnectionType.cs" />
+    <Content Include="App_Data\SoundCloud\Filter.cs" />
+    <Content Include="App_Data\SoundCloud\Group.cs" />
+    <Content Include="App_Data\SoundCloud\HttpMethod.cs" />
+    <Content Include="App_Data\SoundCloud\JsonSerializer.cs" />
+    <Content Include="App_Data\SoundCloud\Playlist.cs" />
+    <Content Include="App_Data\SoundCloud\SoundCloudAccessToken.cs" />
+    <Content Include="App_Data\SoundCloud\SoundCloudApi.cs" />
+    <Content Include="App_Data\SoundCloud\SoundCloudApplication.cs" />
+    <Content Include="App_Data\SoundCloud\SoundCloudClient.cs" />
+    <Content Include="App_Data\SoundCloud\SoundCloudCredentials.cs" />
+    <Content Include="App_Data\SoundCloud\SoundCloudEventArgs.cs" />
+    <Content Include="App_Data\SoundCloud\Track.cs" />
+    <Content Include="App_Data\SoundCloud\User.cs" />
+    <Content Include="App_Data\SoundCloud\Utils.cs" />
+    <Compile Include="App_Data\Facebook\AutenticationService.cs" />
+    <Compile Include="App_Data\Facebook\AccountService.cs" />
+    <Compile Include="App_Data\Facebook\Account.cs" />
+    <Compile Include="App_Data\Facebook\Friend.cs" />
+    <Compile Include="App_Data\Facebook\PostService.cs" />
+    <Compile Include="App_Data\Facebook\Post.cs" />
+    <Compile Include="App_Data\Facebook\Me.cs" />
+    <Compile Include="App_Data\Facebook\Response.cs" />
+    <Compile Include="App_Data\OAuth.cs" />
+    <Compile Include="App_Data\ResponseHelper.cs" />
+    <Compile Include="App_Data\SoundCloud\API.Console\MeClient.cs" />
+    <Compile Include="App_Data\SoundCloud\API.Console\TracksClient.cs" />
+    <Compile Include="App_Data\SoundCloud\API.Console\UsersClient.cs" />
+    <Compile Include="App_Data\SoundCloud\Core\DeserializeException.cs" />
+    <Compile Include="App_Data\SoundCloud\Core\FrameworkException.cs" />
+    <Compile Include="App_Data\SoundCloud\Core\SerializeException.cs" />
+    <Compile Include="App_Data\SoundCloud\Framework\SoundCloudClient.cs" />
+    <Compile Include="App_Data\SoundCloud\Json\AccessTokenData.cs" />
+    <Compile Include="App_Data\SoundCloud\Json\JsonHelper.cs" />
+    <Compile Include="App_Data\SoundCloud\Json\MeData.cs" />
+    <Compile Include="App_Data\SoundCloud\Json\TrackData.cs" />
+    <Compile Include="App_Data\SoundCloud\Json\UserData.cs" />
+    <Compile Include="App_Data\SoundCloud\Json\UserItemData.cs" />
+    <Compile Include="App_Data\SoundCloud\Net\RequestInfo.cs" />
+    <Compile Include="App_Data\SoundCloud\Net\RequestUtility.cs" />
+    <Compile Include="App_Data\UploadHelper\HttpUploadHelper.cs" />
+    <Compile Include="App_Data\UploadHelper\MimePart.cs" />
+    <Compile Include="App_Data\UploadHelper\StreamMimePart.cs" />
+    <Compile Include="App_Data\UploadHelper\StringMimePart.cs" />
+    <Compile Include="App_Data\UploadHelper\UploadFile.cs" />
+    <Compile Include="ArtistComments.aspx.cs">
+      <DependentUpon>ArtistComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArtistComments.aspx.designer.cs">
+      <DependentUpon>ArtistComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Crypto.cs" />
+    <Compile Include="App_Data\Twitter\AuthenticationService.cs" />
+    <Compile Include="App_Data\Facebook\FriendService.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Twitter\Me.cs" />
+    <Compile Include="EncryptionClass.cs" />
+    <Compile Include="FirstLogon.aspx.cs">
+      <DependentUpon>FirstLogon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirstLogon.aspx.designer.cs">
+      <DependentUpon>FirstLogon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.Master.cs">
+      <DependentUpon>Logon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logon.Master.designer.cs">
+      <DependentUpon>Logon.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\CouponCode.aspx.cs">
+      <DependentUpon>CouponCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\CouponCode.aspx.designer.cs">
+      <DependentUpon>CouponCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\CouponFailure.aspx.cs">
+      <DependentUpon>CouponFailure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\CouponFailure.aspx.designer.cs">
+      <DependentUpon>CouponFailure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\CouponSuccess.aspx.cs">
+      <DependentUpon>CouponSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\CouponSuccess.aspx.designer.cs">
+      <DependentUpon>CouponSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ErrorDialog.aspx.cs">
+      <DependentUpon>ErrorDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ErrorDialog.aspx.designer.cs">
+      <DependentUpon>ErrorDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\HowItWorks.aspx.cs">
+      <DependentUpon>HowItWorks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\HowItWorks.aspx.designer.cs">
+      <DependentUpon>HowItWorks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\InviteFailure.aspx.cs">
+      <DependentUpon>InviteFailure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\InviteFailure.aspx.designer.cs">
+      <DependentUpon>InviteFailure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\InviteSuccess.aspx.cs">
+      <DependentUpon>InviteSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\InviteSuccess.aspx.designer.cs">
+      <DependentUpon>InviteSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberContact.aspx.cs">
+      <DependentUpon>MemberContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberContact.aspx.designer.cs">
+      <DependentUpon>MemberContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ProfileInfo.aspx.cs">
+      <DependentUpon>ProfileInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ProfileInfo.aspx.designer.cs">
+      <DependentUpon>ProfileInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ProfilePrint.aspx.cs">
+      <DependentUpon>ProfilePrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ProfilePrint.aspx.designer.cs">
+      <DependentUpon>ProfilePrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ProfileReg.aspx.cs">
+      <DependentUpon>ProfileReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ProfileReg.aspx.designer.cs">
+      <DependentUpon>ProfileReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Promo.aspx.cs">
+      <DependentUpon>Promo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Promo.aspx.designer.cs">
+      <DependentUpon>Promo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\QuotationSuccess.aspx.cs">
+      <DependentUpon>QuotationSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\QuotationSuccess.aspx.designer.cs">
+      <DependentUpon>QuotationSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Subscription.aspx.cs">
+      <DependentUpon>Subscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Subscription.aspx.designer.cs">
+      <DependentUpon>Subscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\UploadCredentialResult.aspx.cs">
+      <DependentUpon>UploadCredentialResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\UploadCredentialResult.aspx.designer.cs">
+      <DependentUpon>UploadCredentialResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Publish.cs" />
+    <Compile Include="Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.Master.cs">
+      <DependentUpon>Profile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.Master.designer.cs">
+      <DependentUpon>Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\CertificateDocument.cs" />
+    <Compile Include="App_Data\Confirmation.cs" />
+    <Compile Include="App_Data\InvoiceForm.cs" />
+    <Compile Include="App_Data\TrackProtectMembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.nl.designer.cs">
+      <DependentUpon>Resource.nl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralConditions.aspx.cs">
+      <DependentUpon>GeneralConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeneralConditions.aspx.designer.cs">
+      <DependentUpon>GeneralConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\AccountOverview.aspx.cs">
+      <DependentUpon>AccountOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\AccountOverview.aspx.designer.cs">
+      <DependentUpon>AccountOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ArtistManagement.aspx.cs">
+      <DependentUpon>ArtistManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ArtistManagement.aspx.designer.cs">
+      <DependentUpon>ArtistManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ArtistRelation.aspx.cs">
+      <DependentUpon>ArtistRelation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ArtistRelation.aspx.designer.cs">
+      <DependentUpon>ArtistRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\FinancialOverview.aspx.cs">
+      <DependentUpon>FinancialOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\FinancialOverview.aspx.designer.cs">
+      <DependentUpon>FinancialOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberTracks.aspx.cs">
+      <DependentUpon>MemberTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberTracks.aspx.designer.cs">
+      <DependentUpon>MemberTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Quotation.aspx.cs">
+      <DependentUpon>Quotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Quotation.aspx.designer.cs">
+      <DependentUpon>Quotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\RegisterDocManaged.aspx.cs">
+      <DependentUpon>RegisterDocManaged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\RegisterDocManaged.aspx.designer.cs">
+      <DependentUpon>RegisterDocManaged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ViewDocManaged.aspx.cs">
+      <DependentUpon>ViewDocManaged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ViewDocManaged.aspx.designer.cs">
+      <DependentUpon>ViewDocManaged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductPage.aspx.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductPage.aspx.designer.cs">
+      <DependentUpon>ProductPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promo.aspx.cs">
+      <DependentUpon>Promo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promo.aspx.designer.cs">
+      <DependentUpon>Promo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectProduct.aspx.cs">
+      <DependentUpon>SelectProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectProduct.aspx.designer.cs">
+      <DependentUpon>SelectProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\facebook.aspx.cs">
+      <DependentUpon>facebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\facebook.aspx.designer.cs">
+      <DependentUpon>facebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\fbconnect.aspx.cs">
+      <DependentUpon>fbconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\fbconnect.aspx.designer.cs">
+      <DependentUpon>fbconnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\fbsignup.aspx.cs">
+      <DependentUpon>fbsignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\fbsignup.aspx.designer.cs">
+      <DependentUpon>fbsignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\scconnect.aspx.cs">
+      <DependentUpon>scconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\scconnect.aspx.designer.cs">
+      <DependentUpon>scconnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\soundcloud1.aspx.cs">
+      <DependentUpon>soundcloud1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\soundcloud1.aspx.designer.cs">
+      <DependentUpon>soundcloud1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\twconnect.aspx.cs">
+      <DependentUpon>twconnect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\twconnect.aspx.designer.cs">
+      <DependentUpon>twconnect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social\twitter.aspx.cs">
+      <DependentUpon>twitter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social\twitter.aspx.designer.cs">
+      <DependentUpon>twitter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberHome.aspx.cs">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberHome.aspx.designer.cs">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\RegisterDocument.aspx.cs">
+      <DependentUpon>RegisterDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\RegisterDocument.aspx.designer.cs">
+      <DependentUpon>RegisterDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\UploadCredentials.aspx.cs">
+      <DependentUpon>UploadCredentials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\UploadCredentials.aspx.designer.cs">
+      <DependentUpon>UploadCredentials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\CertificateManager.cs" />
+    <Compile Include="App_Data\Database.cs" />
+    <Compile Include="App_Data\Support.cs" />
+    <Compile Include="CaptchaControl.aspx.cs">
+      <DependentUpon>CaptchaControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\SelectProduct.aspx.cs">
+      <DependentUpon>SelectProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\SelectProduct.aspx.designer.cs">
+      <DependentUpon>SelectProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\BuyProduct.aspx.cs">
+      <DependentUpon>BuyProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\BuyProduct.aspx.designer.cs">
+      <DependentUpon>BuyProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Util.cs" />
+    <Compile Include="Member\ShowProduct.aspx.cs">
+      <DependentUpon>ShowProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ShowProduct.aspx.designer.cs">
+      <DependentUpon>ShowProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\CsvReader.cs" />
+    <Compile Include="Member\PayResult.aspx.cs">
+      <DependentUpon>PayResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\PayResult.aspx.designer.cs">
+      <DependentUpon>PayResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\Log.cs" />
+    <Compile Include="App_Data\LogWriter.cs" />
+    <Compile Include="App_Data\Logger.cs" />
+    <Compile Include="App_Data\Config.cs" />
+    <Compile Include="App_Data\WebClientDbg.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Data\WebInterface.cs" />
+    <Compile Include="App_Data\MySqlDatabase.cs" />
+    <Compile Include="App_Data\HttpHelper.cs" />
+    <Compile Include="HowItWorks.aspx.designer.cs">
+      <DependentUpon>HowItWorks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HowItWorks.aspx.cs">
+      <DependentUpon>HowItWorks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberContact1.aspx.designer.cs">
+      <DependentUpon>MemberContact1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberContact1.aspx.cs">
+      <DependentUpon>MemberContact1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\MemberEdit.aspx.designer.cs">
+      <DependentUpon>MemberEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\MemberEdit.aspx.cs">
+      <DependentUpon>MemberEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Twitter\TwitterCallback.aspx.cs">
+      <DependentUpon>TwitterCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Twitter\TwitterCallback.aspx.designer.cs">
+      <DependentUpon>TwitterCallback.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Browsers\" />
+    <Folder Include="Downloads\" />
+    <Folder Include="Temporaryfiles\" />
+    <Folder Include="trackprotect_repos\repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="true" VerifyCodeBehindEvents="true">
+        <XspParameters Port="8081" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="true" />
+        <WebDeployTargets>
+          <Target Name="">
+            <FileCopier Handler="MonoDevelop.Deployment.SshFuseFileCopyHandler" TargetDirectory="root@trackprotect.com:/var/www/trackprotect.com/pub" ExtraMountArguments="" ctype="SshFuseFileCopyConfiguration" />
+          </Target>
+        </WebDeployTargets>
+      </Properties>
+    </MonoDevelop>
+    <VisualStudio>
+      <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>4508</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resource.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resource.nl.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\licenses.licx" />
+  </ItemGroup>
+</Project>

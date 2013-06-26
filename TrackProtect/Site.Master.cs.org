@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace TrackProtect
+{
+    public partial class SiteMaster : System.Web.UI.MasterPage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!Request.IsAuthenticated)
+                ShowLoggedOffView();
+            else
+                ShowLoggedOnView();
+
+            if (!IsPostBack)
+            {
+            }
+            else
+            {
+            }
+        }
+
+        private void ShowLoggedOffView()
+        {
+            NavigationMenu.Items.Clear();
+            NavigationMenu.Items.Add(new MenuItem("Home", "", "", "~/"));
+            NavigationMenu.Items.Add(new MenuItem("About TrackProtect", "", "", "~/About.aspx"));
+            //Response.Redirect("~/Default.aspx");
+        }
+
+        private void ShowLoggedOnView()
+        {
+            int credits = 0;
+            if (HttpContext.Current.Session["credits"] != null)
+                credits = (int) HttpContext.Current.Session["credits"];
+           
+            NavigationMenu.Items.Clear();
+            AddMenuItem("Home", "", "", "~/", true);
+            AddMenuItem("Register document", "", "", "~/Member/RegisterDocument.aspx", (credits > 0));
+            AddMenuItem("Client information", "", "", "~/Member/RegisterClientInfo.aspx", true);
+            AddMenuItem("About TrackProtect", "", "", "~/About.aspx", true);
+        }
+
+        private void AddMenuItem(string name, string value, string imageUrl, string navigateUrl, bool enabled)
+        {
+            MenuItem item = new MenuItem(name, value, imageUrl, navigateUrl);
+            item.Enabled = enabled;
+            NavigationMenu.Items.Add(item);
+        }
+    }
+}

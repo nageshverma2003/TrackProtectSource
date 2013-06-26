@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+	<title>TrackProtect - OVERZICHT ACCOUNT</title>
+
+    <!-- Fonts - Need to load it in iTextSharp -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800,800italic,700italic,600italic,400italic' rel='stylesheet' type='text/css'>
+
+	<!-- Embedded CSS -->
+    <style type="text/css">
+        * { font-size: 16pt; }
+
+        @font-face {
+          font-family: "League Gothic";
+          src: url('fonts/eot("leaguegothic-regular-webfont.eot")');
+          src: url('fonts/eot("leaguegothic-regular-webfont.eot")?#iefix') format('eot'), url('fonts/leaguegothic-regular-webfont.woff') format('woff');
+        } 
+
+        body {
+            width: 100%;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            color: #5e6061;
+            background-color: #e6e6e6;
+            padding-bottom: 1em;
+        }   
+        div, p {
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "League Gothic", "Helvetica", Helvetica, Arial, sans-serif;    
+            font-weight: normal;
+            color: #75b891;
+        }
+        h1 {
+            font-size: 70pt;
+            letter-spacing: 3pt;
+        }
+        h1 span, h1 label {
+            color: #cdccca;
+            font-size: 30pt;
+            display: inline-block;
+            margin-left: 100px;
+        }
+        label.inline, input.inline {
+            display: inline-block !important;           
+            width: inherit;
+            margin: 0;
+        }
+        label.inline {
+            font-family: "League Gothic", "Helvetica", Helvetica, Arial, sans-serif;    
+            color: #cdccca;
+            font-size: 30pt;
+            line-height: 23pt;
+            vertical-align: bottom;
+            margin-right: .3em;
+        }
+        input.inline {
+            height: 22pt;
+            width: 6em;
+        }
+        h2 {
+            font-size: 40pt;
+            letter-spacing: 2pt;
+        }
+        table {
+            border: 0;
+            margin: 0 auto;
+            width: 100%;
+        }   
+        td {
+            padding: 0;
+            margin: 0;
+        }   
+        tr span {
+            display: inline-block;
+            font-weight: bold;
+        }
+        tr span.label {
+            color: #cdccca; 
+            margin-right: 1em;
+        }
+        tr.separator {
+            height: 14em;    
+        }
+        .container {
+            width: 80%;
+            max-width: 60em;
+            margin: 0 auto;
+        }   
+        .content-wrapper {
+            width: 80%;
+            max-width: 50em;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
+        .main, .footer {
+            background-color: #FFFFFF;
+        }
+        .footer .content-wrapper {
+            padding-top: .2em;
+        }
+        .center {
+            text-align: center;
+        }   
+        .left {
+            text-align: left;
+        }   
+        .right {
+            text-align: right;
+        }   
+        .logo {
+            display: block;
+        }
+        .address {
+            color: #231f20;
+            font-size: 10pt;
+        }
+        .pull-left {
+            float: left;
+        }
+        .pull-right {
+            float: right;
+        }
+        .content-header, .content-body {
+            border: 1px solid #75b891;
+            margin-top: 3em;
+            padding: 1em 1.8em;
+        }
+        .content-header p, .content-body p {
+            padding: .2em 0;  
+        }
+        .content-body label{
+            margin-top: 1em;
+        }
+        table.invoice-header span {
+            font-family: "League Gothic", "Helvetica", Helvetica, Arial, sans-serif;    
+            font-weight: normal;
+            font-size: 30pt;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+        }
+        input, textarea {
+            border: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+        }
+        p.value {
+            font-weight: bold;
+            font-size: 24pt;
+            margin-bottom: .5em;
+        }
+        table.products {
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        table.products th {
+            padding: .2em 0;
+        }
+        table.products td {
+            text-align: center;
+            padding: .2em 0;
+        }
+        table.products td.first-product {
+            padding-top: 1em;
+        }
+        table.products thead {
+            border-bottom: 1px solid #999999;
+        }
+        table.products tfoot {
+            border-top: 1px solid #999999;
+        }
+        table.products tfoot td {
+            padding-bottom: 0;
+        }
+        .client-info {
+            margin: -.8em 0 1.2em;
+        }
+        .green {
+            color: #75b891;
+        }
+    </style>
+
+    <!--
+    <link type="text/css" rel="stylesheet" href="css/general_foundicons.css" media="screen, projector, print">
+    -->
+
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="header"> <!-- Begin Header Section -->
+            <div class="content-wrapper">
+                <table>
+                    <tr>
+                        <td><img class="logo" src="Images/to_logo.png" alt="TrackProctect Logo"></td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div> <!-- End Header Section -->
+
+        <div class="main"> <!-- Start Main Content -->
+            <div class="content-wrapper">
+                
+                <h1>OVERZICHT ACCOUNT</h1>
+                <form>
+                    <label>naam</label>
+                    <input class="required" type="text"> 
+
+                    <h2>PERSOONLIJKE INFORMATIE</h2>
+                    <table>
+                        <tr>
+                            <td width="45%">
+                                <label>geslacht</label>
+                                <input class="required" type="text"> 
+                            </td>
+                            <td width="10%"></td>
+                            <td width="45%">
+                                <label>telefoonnummer</label>
+                                <input class="required" type="text"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="45%">
+                                <label>geboortedatum</label>
+                                <input class="required" type="text"> 
+                            </td>
+                            <td width="10%"></td>
+                            <td width="45%">
+                                <label>email adres</label>
+                                <input class="required" type="text"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="45%">
+                                <label>land</label>
+                                <input class="required" type="text"> 
+                            </td>
+                            <td width="10%"></td>
+                            <td width="45%">
+                                <label>Ik ben een</label>
+                                <input class="required" type="text"> 
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>REGISTRATIE</h2>
+                    <table>
+                        <tr>
+                            <td width="45%">
+                                <label>Buma/Stemra no.</label>
+                                <input class="required" type="text"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="45%">
+                                <label>SENA reg. no.</label>
+                                <input class="required" type="text"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="45%">
+                                <label>ISRC handle</label>
+                                <input class="required" type="text"> 
+                            </td>
+                    </table>
+                </form>
+
+            </div>
+        </div> <!-- End Main Content -->
+
+        
+    </div>
+  </body>
+</html>

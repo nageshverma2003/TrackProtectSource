@@ -1,0 +1,1 @@
+﻿<p>Thank you for registering in track protect. An email has been sent to your account.</p>

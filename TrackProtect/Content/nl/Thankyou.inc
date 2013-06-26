@@ -1,0 +1,1 @@
+﻿<p>Bedankt voor het registreren in track te beschermen. Een e-mail is verzonden naar uw account.</p>

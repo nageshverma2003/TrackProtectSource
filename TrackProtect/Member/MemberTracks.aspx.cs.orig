@@ -1,0 +1,191 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace TrackProtect.Member
+{
+    public partial class MemberTracks : BasePage
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+<<<<<<< local
+=======
+            Session["bodyid"] = "tracks";
+>>>>>>> other
+            using (Database db = new MySqlDatabase())
+            {
+                UserInfo ui = db.GetUser(Util.UserId);
+                ClientInfo ci = db.GetClientInfo(Util.UserId);
+                DataSet ds = db.GetRegister(Util.UserId);
+                int protectedTracks = ds.Tables[0].Rows.Count;
+
+                LoggedOnTitle.Text = Resources.Resource.LoggedOnTitle;
+                LoggedOnUserName.Text = string.Format("<span><b>{0}</b></span>", ci.GetFullName());
+<<<<<<< local
+				CreditsLiteral.Text = Util.GetUserCredits(Util.UserId).ToString();
+				ProtectedLiteral.Text = protectedTracks.ToString();
+				decimal percentComplete = 0m;
+				if (Session["percentComplete"] != null)
+					percentComplete = Convert.ToDecimal(Session["percentComplete"]);
+				CompletedLiteral.Text = string.Empty;
+				if (percentComplete < 100)
+					CompletedLiteral.Text = string.Format(Resources.Resource.PercentComplete, percentComplete / 100m);
+				ClickToLinkLiteral.Visible = (CompletedLiteral.Text != string.Empty);
+			}
+=======
+                CreditsLiteral.Text =  Util.GetUserCredits(Util.UserId).ToString();
+                ProtectedLiteral.Text =  protectedTracks.ToString();
+                decimal percentComplete = 0m;
+                if (Session["percentComplete"] != null)
+                    percentComplete = Convert.ToDecimal(Session["percentComplete"]);
+                CompletedLiteral.Text = string.Empty;
+                if (percentComplete < 100)
+                    CompletedLiteral.Text = string.Format(Resources.Resource.PercentComplete, percentComplete / 100m);
+                ClickToLinkLiteral.Visible = (CompletedLiteral.Text != string.Empty);
+            }
+>>>>>>> other
+
+            FillRegistrationGrid();
+        }
+
+        private void FillRegistrationGrid()
+        {
+            if (HttpContext.Current.Session["userid"] == null)
+                return;
+
+            int credits = Util.GetUserCredits(Util.UserId);
+
+            long userid = Util.UserId;
+            using (Database db = new MySqlDatabase())
+            {
+                DataSet registry = db.GetRegister(userid);
+                DataView dataView = new DataView(registry.Tables["Table"]);
+               // RegistrationGrid.DataSource = dataView;
+                //RegistrationGrid.DataBind();
+                dlMyTracks.DataSource = dataView;
+                dlMyTracks.DataBind();
+            }
+        }
+
+        //public void RegistrationGrid_RowDataBound(object sender, GridViewRowEventArgs e)
+        //{
+        //    if (e.Row.RowType == DataControlRowType.DataRow)
+        //    {
+        //        DataRowView dataItem = e.Row.DataItem as DataRowView;
+        //        string txtCer = dataItem[1] as string;
+        //        string txtDoc = Path.ChangeExtension(txtCer, ".pdf");
+        //        string navUrlCer = GetUserFilepath(txtCer);
+        //        string navUrlDoc = GetUserFilepath(txtDoc);
+
+
+        //        /*
+        //        ImageButton btn = e.Row.Cells[4].FindControl("downloadButton") as ImageButton;
+        //        btn.CommandArgument = navUrl;
+        //        */
+
+        //        HyperLink hl = e.Row.Cells[0].FindControl("downloadButton") as HyperLink;
+        //        if (!string.IsNullOrEmpty(navUrlCer) && File.Exists(navUrlCer))
+        //        {
+        //            //hl.Text = Path.GetFileNameWithoutExtension(txtCer);
+        //            hl.ImageUrl = "~/Images/certificates-icon.png";
+        //            hl.NavigateUrl = string.Format("~/DownloadHandler.ashx?file='{0}'", navUrlCer);
+        //        }
+        //        else
+        //        {
+        //            hl.Text = Resources.Resource.NoFile;
+        //            hl.NavigateUrl = string.Empty;
+        //        }
+
+        //        hl = e.Row.Cells[0].FindControl("downloadDocument") as HyperLink;
+        //        if (!string.IsNullOrEmpty(navUrlDoc) && File.Exists(navUrlDoc))
+        //        {
+        //            //hl.Text = Path.GetFileNameWithoutExtension(txtDoc);
+        //            hl.ImageUrl = "~/Images/pdf-icon.png";
+        //            hl.NavigateUrl = string.Format("~/DownloadHandler.ashx?file='{0}'", navUrlDoc);
+        //        }
+        //        else
+        //        {
+        //            hl.Text = Resources.Resource.NoFile;
+        //            hl.NavigateUrl = string.Empty;
+        //        }
+        //    }
+        //}
+
+        public string GetUserFilepath(string filename)
+        {
+            long userid = Util.UserId;
+            string pwd = string.Empty;
+            if (HttpContext.Current.Session["access"] != null)
+                pwd = HttpContext.Current.Session["access"] as string;
+
+            string repositoryPath = null;
+            using (Database db = new MySqlDatabase())
+            {
+                repositoryPath = db.GetUserDocumentPath(userid, pwd);
+            }
+            string ret = Path.Combine(repositoryPath, filename);
+            if (File.Exists(ret))
+                return ret;
+
+            return string.Empty;
+        }
+
+        public void DownloadButton_Click(Object sender, CommandEventArgs e)
+        {
+            string filepath = e.CommandArgument as string;
+            string filename = Path.GetFileName(filepath);
+            string url = "http://www.trackprotect.com/" + filename;
+            WebClient client = new System.Net.WebClient();
+            client.DownloadFile(url, filename);
+        }
+        public string Cutdesc(string s)
+        {
+            if (s.Length > 16)
+            {
+                s = s.Substring(0, 16);
+                s = s + "..";
+            }
+            return s;
+        }
+
+        protected void dlMyTracks_ItemDataBound(object sender, DataListItemEventArgs e)
+        {
+            string txtCer = ((System.Data.DataRowView)(e.Item.DataItem)).Row.ItemArray[1].ToString();
+            string txtDoc = Path.ChangeExtension(txtCer, ".pdf");
+            string navUrlCer = GetUserFilepath(txtCer);
+            string navUrlDoc = GetUserFilepath(txtDoc);
+            HyperLink hl = e.Item.FindControl("downloadButton") as HyperLink;
+            if (!string.IsNullOrEmpty(navUrlCer) && File.Exists(navUrlCer))
+            {
+                //hl.Text = Path.GetFileNameWithoutExtension(txtCer);
+               // hl.ImageUrl = "~/Images/certificates-icon.png";
+                hl.NavigateUrl = string.Format("~/DownloadHandler.ashx?file='{0}'", navUrlCer);
+            }
+            else
+            {
+                //hl.Text = Resources.Resource.NoFile;
+                hl.NavigateUrl = string.Empty;
+            }
+
+            hl = e.Item.FindControl("downloadDocument") as HyperLink;
+            if (!string.IsNullOrEmpty(navUrlDoc) && File.Exists(navUrlDoc))
+            {
+                //hl.Text = Path.GetFileNameWithoutExtension(txtDoc);
+              //  hl.ImageUrl = "~/Images/pdf-icon.png";
+                hl.NavigateUrl = string.Format("~/DownloadHandler.ashx?file='{0}'", navUrlDoc);
+            }
+            else
+            {
+                //hl.Text = Resources.Resource.NoFile;
+                hl.NavigateUrl = string.Empty;
+            }
+        }
+
+    }
+}
